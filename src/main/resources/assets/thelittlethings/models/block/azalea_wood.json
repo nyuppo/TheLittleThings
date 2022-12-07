@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelittlethings:block/azalea_log",
+    "side": "thelittlethings:block/azalea_log"
+  }
+}

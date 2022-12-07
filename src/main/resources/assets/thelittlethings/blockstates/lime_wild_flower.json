@@ -1,0 +1,72 @@
+{
+  "variants": {
+    "flower_state=default": [
+      {
+        "model": "thelittlethings:block/lime_wild_flower"
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 90
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 180
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 270
+      }
+    ],
+    "flower_state=spreading": [
+      {
+        "model": "thelittlethings:block/lime_wild_flower"
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 90
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 180
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 270
+      }
+    ],
+    "flower_state=germinating": [
+      {
+        "model": "thelittlethings:block/lime_wild_flower"
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 90
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 180
+      },
+      {
+        "model": "thelittlethings:block/lime_wild_flower",
+        "y": 270
+      }
+    ],
+    "flower_state=blooming": [
+      {
+        "model": "thelittlethings:block/wild_weeds"
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 90
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 180
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 270
+      }
+    ]
+  }
+}

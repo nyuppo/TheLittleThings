@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thelittlethings:block/oak_trimmed_planks_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thelittlethings:block/oak_trimmed_planks"
+    },
+    "axis=z": {
+      "model": "thelittlethings:block/oak_trimmed_planks_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thelittlethings:azalea_planks"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:azalea_stairs",
+    "count": 4
+  }
+}

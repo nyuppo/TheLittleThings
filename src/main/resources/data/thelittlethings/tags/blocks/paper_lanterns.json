@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:paper_lantern",
+    "thelittlethings:orange_paper_lantern",
+    "thelittlethings:magenta_paper_lantern",
+    "thelittlethings:light_blue_paper_lantern",
+    "thelittlethings:yellow_paper_lantern",
+    "thelittlethings:lime_paper_lantern",
+    "thelittlethings:pink_paper_lantern",
+    "thelittlethings:gray_paper_lantern",
+    "thelittlethings:light_gray_paper_lantern",
+    "thelittlethings:cyan_paper_lantern",
+    "thelittlethings:purple_paper_lantern",
+    "thelittlethings:blue_paper_lantern",
+    "thelittlethings:brown_paper_lantern",
+    "thelittlethings:green_paper_lantern",
+    "thelittlethings:red_paper_lantern",
+    "thelittlethings:black_paper_lantern",
+    "thelittlethings:soul_paper_lantern"
+  ]
+}

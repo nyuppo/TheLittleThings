@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "trimmed_planks",
+  "key": {
+    "S": {
+      "item": "thelittlethings:azalea_slab"
+    }
+  },
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "thelittlethings:azalea_trimmed_planks"
+  }
+}

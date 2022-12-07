@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_chest_raft",
+    "thelittlethings:sakura_chest_boat",
+    "thelittlethings:azalea_chest_boat",
+    "thelittlethings:willow_chest_boat",
+    "thelittlethings:baobab_chest_boat"
+  ]
+}

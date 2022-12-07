@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelittlethings:block/willow_slab"
+    },
+    "type=double": {
+      "model": "thelittlethings:block/willow_planks"
+    },
+    "type=top": {
+      "model": "thelittlethings:block/willow_slab_top"
+    }
+  }
+}

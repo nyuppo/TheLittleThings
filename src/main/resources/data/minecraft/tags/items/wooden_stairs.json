@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_stairs",
+    "thelittlethings:sakura_stairs",
+    "thelittlethings:azalea_stairs",
+    "thelittlethings:willow_stairs",
+    "thelittlethings:baobab_stairs"
+  ]
+}

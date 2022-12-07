@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "thelittlethings:block/dunestone_bricks",
+    "top": "thelittlethings:block/dunestone_bricks",
+    "side": "thelittlethings:block/dunestone_bricks"
+  }
+}

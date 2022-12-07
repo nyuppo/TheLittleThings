@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "trimmed_planks",
+  "key": {
+    "S": {
+      "item": "thelittlethings:sakura_slab"
+    }
+  },
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "thelittlethings:sakura_trimmed_planks"
+  }
+}

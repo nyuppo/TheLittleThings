@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:potted_sakura_sapling",
+    "thelittlethings:potted_willow_sapling",
+    "thelittlethings:potted_baobab_sapling",
+
+    "thelittlethings:potted_black_wild_flower",
+    "thelittlethings:potted_blue_wild_flower",
+    "thelittlethings:potted_cyan_wild_flower",
+    "thelittlethings:potted_fire_wild_flower",
+    "thelittlethings:potted_golden_wild_flower",
+    "thelittlethings:potted_green_wild_flower",
+    "thelittlethings:potted_ice_wild_flower",
+    "thelittlethings:potted_light_blue_wild_flower",
+    "thelittlethings:potted_lime_wild_flower",
+    "thelittlethings:potted_magenta_wild_flower",
+    "thelittlethings:potted_orange_wild_flower",
+    "thelittlethings:potted_pink_wild_flower",
+    "thelittlethings:potted_purple_wild_flower",
+    "thelittlethings:potted_red_wild_flower",
+    "thelittlethings:potted_white_wild_flower",
+    "thelittlethings:potted_yellow_wild_flower",
+    "thelittlethings:potted_wild_weeds"
+  ]
+}

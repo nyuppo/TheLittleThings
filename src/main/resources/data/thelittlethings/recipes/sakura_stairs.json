@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thelittlethings:sakura_planks"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:sakura_stairs",
+    "count": 4
+  }
+}

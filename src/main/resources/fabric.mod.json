@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "thelittlethings",
+  "version": "${version}",
+
+  "name": "The Little Things",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "nyuppo"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nyuppo.TheLittleThings"
+    ],
+    "client": [
+      "com.nyuppo.TheLittleThingsClient"
+    ],
+    "terrablender": [
+      "com.nyuppo.world.TheLittleThingsWorld"
+    ]
+  },
+  "mixins": [
+    "thelittlethings.mixins.json"
+  ],
+  "accessWidener": "thelittlethings.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

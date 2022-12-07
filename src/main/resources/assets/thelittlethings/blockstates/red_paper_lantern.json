@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "hanging=false": {
+            "model": "thelittlethings:block/red_paper_lantern"
+        },
+        "hanging=true": {
+            "model": "thelittlethings:block/red_paper_lantern_hanging"
+        }
+    }
+}

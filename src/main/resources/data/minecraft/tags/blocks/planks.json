@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_planks",
+    "thelittlethings:sakura_planks",
+    "thelittlethings:azalea_planks",
+    "thelittlethings:willow_planks",
+    "thelittlethings:baobab_planks",
+
+    "thelittlethings:oak_trimmed_planks",
+    "thelittlethings:spruce_trimmed_planks",
+    "thelittlethings:birch_trimmed_planks",
+    "thelittlethings:jungle_trimmed_planks",
+    "thelittlethings:acacia_trimmed_planks",
+    "thelittlethings:dark_oak_trimmed_planks",
+    "thelittlethings:crimson_trimmed_planks",
+    "thelittlethings:warped_trimmed_planks",
+    "thelittlethings:mangrove_trimmed_planks",
+    "thelittlethings:bamboo_trimmed_planks",
+    "thelittlethings:sakura_trimmed_planks",
+    "thelittlethings:azalea_trimmed_planks",
+    "thelittlethings:willow_trimmed_planks",
+    "thelittlethings:baobab_trimmed_planks"
+  ]
+}

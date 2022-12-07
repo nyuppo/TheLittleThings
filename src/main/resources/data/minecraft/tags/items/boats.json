@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_raft",
+    "thelittlethings:sakura_boat",
+    "thelittlethings:azalea_boat",
+    "thelittlethings:willow_boat",
+    "thelittlethings:baobab_boat"
+  ]
+}

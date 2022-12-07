@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/template_custom_fence_gate",
+  "textures": {
+    "particle": "thelittlethings:block/bamboo_fence_gate_particle",
+    "texture": "thelittlethings:block/bamboo_fence_gate"
+  }
+}

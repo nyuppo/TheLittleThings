@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_wall_sign",
+    "thelittlethings:sakura_wall_sign",
+    "thelittlethings:azalea_wall_sign",
+    "thelittlethings:willow_wall_sign",
+    "thelittlethings:baobab_wall_sign",
+    "thelittlethings:paper_wall_sign"
+  ]
+}

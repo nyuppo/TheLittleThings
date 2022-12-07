@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    " S "
+  ],
+  "key": {
+    "W": {
+      "item": "thelittlethings:paper_wall"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:paper_sign",
+    "count": 3
+  }
+}

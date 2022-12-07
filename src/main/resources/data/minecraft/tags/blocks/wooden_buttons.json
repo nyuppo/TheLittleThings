@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_button",
+    "thelittlethings:sakura_button",
+    "thelittlethings:azalea_button",
+    "thelittlethings:willow_button",
+    "thelittlethings:baobab_button"
+  ]
+}

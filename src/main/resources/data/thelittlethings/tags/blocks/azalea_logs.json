@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:azalea_log",
+    "thelittlethings:stripped_azalea_log",
+    "thelittlethings:azalea_wood",
+    "thelittlethings:stripped_azalea_wood"
+  ]
+}

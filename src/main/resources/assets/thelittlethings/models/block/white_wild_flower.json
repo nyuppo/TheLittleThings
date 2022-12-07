@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:block/wild_flower_base",
+  "textures": {
+    "flower": "thelittlethings:block/white_wild_flower"
+  }
+}

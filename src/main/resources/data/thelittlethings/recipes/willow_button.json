@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "thelittlethings:willow_planks"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:willow_button"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:dunestone",
+    "thelittlethings:polished_dunestone",
+    "thelittlethings:polished_dunestone_slab",
+    "thelittlethings:polished_dunestone_stairs",
+    "thelittlethings:dunestone_bricks",
+    "thelittlethings:dunestone_brick_slab",
+    "thelittlethings:dunestone_brick_stairs",
+    "thelittlethings:smooth_dunestone",
+    "thelittlethings:smooth_dunestone_slab",
+    "thelittlethings:smooth_dunestone_stairs",
+    "thelittlethings:polished_dunestone_wall",
+    "thelittlethings:smooth_dunestone_wall",
+    "thelittlethings:dunestone_brick_wall"
+  ]
+}

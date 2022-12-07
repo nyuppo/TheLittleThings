@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:willow_log",
+    "thelittlethings:stripped_willow_log",
+    "thelittlethings:willow_wood",
+    "thelittlethings:stripped_willow_wood"
+  ]
+}

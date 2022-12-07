@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:block/wild_flower_pot",
+  "textures": {
+    "plant": "thelittlethings:block/cyan_wild_flower"
+  }
+}

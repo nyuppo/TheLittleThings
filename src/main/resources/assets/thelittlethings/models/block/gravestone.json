@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "thelittlethings:block/gravestone_top",
+		"1": "thelittlethings:block/gravestone",
+		"2": "thelittlethings:block/gravestone_bottom",
+		"3": "thelittlethings:block/gravestone_side",
+		"particle": "thelittlethings:block/gravestone"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 6],
+			"to": [13, 14, 10],
+			"faces": {
+				"north": {"uv": [3, 2, 13, 16], "texture": "#1"},
+				"east": {"uv": [6, 2, 10, 16], "texture": "#3"},
+				"south": {"uv": [3, 2, 13, 16], "texture": "#1"},
+				"west": {"uv": [6, 2, 10, 16], "texture": "#3"},
+				"up": {"uv": [3, 6, 13, 10], "texture": "#0"},
+				"down": {"uv": [3, 6, 13, 10], "texture": "#2"}
+			}
+		}
+	]
+}

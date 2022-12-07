@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:sakura_log",
+    "thelittlethings:stripped_sakura_log",
+    "thelittlethings:sakura_wood",
+    "thelittlethings:stripped_sakura_wood"
+  ]
+}

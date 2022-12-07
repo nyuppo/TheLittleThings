@@ -1,0 +1,607 @@
+{
+  "block.chiseled_bookshelf.insert": {
+    "subtitle": "subtitles.chiseled_bookshelf.insert",
+    "sounds": [
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert1",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert2",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert3",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert4"
+    ]
+  },
+  "block.chiseled_bookshelf.insert.enchanted": {
+    "subtitle": "subtitles.chiseled_bookshelf.insert.enchanted",
+    "sounds": [
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert_enchanted1",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert_enchanted2",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert_enchanted3",
+        "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_insert_enchanted4"
+    ]
+  },
+  "block.chiseled_bookshelf.pickup": {
+    "subtitle": "subtitles.chiseled_bookshelf.take",
+    "sounds": [
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup1",
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup2",
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup3"
+    ]
+  },
+  "block.chiseled_bookshelf.pickup.enchanted": {
+    "subtitle": "subtitles.chiseled_bookshelf.take.enchanted",
+    "sounds": [
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup_enchanted1",
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup_enchanted2",
+      "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_pickup_enchanted3"
+    ]
+  },
+  "block.chiseled_bookshelf.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break1",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break2",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break3",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break4",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break5",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break6",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.chiseled_bookshelf.fall": {
+    "sounds": [
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step1",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step2",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step3",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step4",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step5",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "block.chiseled_bookshelf.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step1",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step2",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step3",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step4",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step5",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "block.chiseled_bookshelf.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break1",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break2",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break3",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break4",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break5",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_break6",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.chiseled_bookshelf.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step1"
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step2"
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step3"
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step4"
+      },
+      {
+        "name": "thelittlethings:block/chiseled_bookshelf/chiseled_bookshelf_step5"
+      }
+    ]
+  },
+  "block.bamboo_wood.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break1",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break2",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break3",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break4",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break5",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.bamboo_wood.fall": {
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step1",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step2",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step3",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step4",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step5",
+        "pitch": 0.75
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step6",
+        "pitch": 0.75
+      }
+    ]
+  },
+  "block.bamboo_wood.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step1",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step2",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step3",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step4",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step5",
+        "pitch": 0.5
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step6",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "block.bamboo_wood.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break1",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break2",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break3",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break4",
+        "pitch": 0.8
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_break5",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.bamboo_wood.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step1"
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step2"
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step3"
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step4"
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step5"
+      },
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_wood_step6"
+      }
+    ]
+  },
+  "block.bamboo_wood_door.open": {
+    "subtitle": "subtitles.block.door.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_door_toggle1"
+    ]
+  },
+  "block.bamboo_wood_door.close": {
+    "subtitle": "subtitles.block.door.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_door_toggle1"
+    ]
+  },
+  "block.bamboo_wood_trapdoor.open": {
+    "subtitle": "subtitles.block.trapdoor.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_trapdoor_toggle1"
+    ]
+  },
+  "block.bamboo_wood_trapdoor.close": {
+    "subtitle": "subtitles.block.trapdoor.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_trapdoor_toggle1"
+    ]
+  },
+  "block.bamboo_wood_button.click_on": {
+    "subtitle": "subtitles.block.button.click",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_button_press",
+        "pitch": 0.7
+      }
+    ]
+  },
+  "block.bamboo_wood_button.click_off": {
+    "subtitle": "subtitles.block.button.click",
+    "sounds": [
+      {
+        "name": "thelittlethings:block/bamboo_wood/bamboo_button_press",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "block.bamboo_wood_fence_gate.open": {
+    "subtitle": "subtitles.block.fence_gate.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle1",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle2",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle3",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle4"
+    ]
+  },
+  "block.bamboo_wood_fence_gate.close": {
+    "subtitle": "subtitles.block.fence_gate.toggle",
+    "sounds": [
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle1",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle2",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle3",
+      "thelittlethings:block/bamboo_wood/bamboo_fence_gate_toggle4"
+    ]
+  },
+  "entity.camel.ambient": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/ambient1",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient2",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient3",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient4",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient5",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient6",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient7",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/ambient8",
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.ambient"
+  },
+  "entity.camel.dash": {
+    "sounds": [
+      "thelittlethings:mob/camel/dash1",
+      "thelittlethings:mob/camel/dash2",
+      "thelittlethings:mob/camel/dash3",
+      "thelittlethings:mob/camel/dash4",
+      "thelittlethings:mob/camel/dash5",
+      "thelittlethings:mob/camel/dash6"
+    ],
+    "subtitle": "subtitles.entity.camel.dash"
+  },
+  "entity.camel.dash_ready": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/dash_ready1",
+        "volume": 0.25
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.dash_ready"
+  },
+  "entity.camel.death": {
+    "sounds": [
+      "thelittlethings:mob/camel/death1",
+      "thelittlethings:mob/camel/death2"
+    ],
+    "subtitle": "subtitles.entity.camel.death"
+  },
+  "entity.camel.eat": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/eat1",
+        "volume": 0.2
+      },
+      {
+        "name": "thelittlethings:mob/camel/eat2",
+        "volume": 0.2
+      },
+      {
+        "name": "thelittlethings:mob/camel/eat3",
+        "volume": 0.2
+      },
+      {
+        "name": "thelittlethings:mob/camel/eat4",
+        "volume": 0.2
+      },
+      {
+        "name": "thelittlethings:mob/camel/eat5",
+        "volume": 0.2
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.eat"
+  },
+  "entity.camel.hurt": {
+    "sounds": [
+      "thelittlethings:mob/camel/hurt1",
+      "thelittlethings:mob/camel/hurt2",
+      "thelittlethings:mob/camel/hurt3",
+      "thelittlethings:mob/camel/hurt4"
+    ],
+    "subtitle": "subtitles.entity.camel.hurt"
+  },
+  "entity.camel.saddle": {
+    "sounds": [
+      {
+        "name": "entity.horse.saddle",
+        "pitch": 0.8,
+        "type": "event"
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.saddle"
+  },
+  "entity.camel.sit": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/sit1",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/sit2",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/sit3",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/sit4",
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.sit"
+  },
+  "entity.camel.stand": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/stand1",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/stand2",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/stand3",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/stand4",
+        "volume": 0.3
+      },
+      {
+        "name": "thelittlethings:mob/camel/stand5",
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.stand"
+  },
+  "entity.camel.step": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/step1",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/step2",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/step3",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/step4",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/step5",
+        "volume": 0.5
+      },
+      {
+        "name": "thelittlethings:mob/camel/step6",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.step"
+  },
+  "entity.camel.step_sand": {
+    "sounds": [
+      {
+        "name": "thelittlethings:mob/camel/step_sand1",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/step_sand2",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/step_sand3",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/step_sand4",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/step_sand5",
+        "volume": 0.45
+      },
+      {
+        "name": "thelittlethings:mob/camel/step_sand6",
+        "volume": 0.45
+      }
+    ],
+    "subtitle": "subtitles.entity.camel.step_sand"
+  },
+  "block.wild_flower.bloom": {
+    "subtitle": "subtitles.wild_flower.bloom",
+    "sounds": [
+      {
+        "name": "block/sweet_berry_bush/place1",
+        "volume": 0.6
+      },
+      {
+        "name": "block/sweet_berry_bush/place2",
+        "volume": 0.6
+      },
+      {
+        "name": "block/sweet_berry_bush/place3",
+        "volume": 0.6
+      },
+      {
+        "name": "block/sweet_berry_bush/place4",
+        "volume": 0.6
+      },
+      {
+        "name": "block/sweet_berry_bush/place5",
+        "volume": 0.6
+      },
+      {
+        "name": "block/sweet_berry_bush/place6",
+        "volume": 0.6
+      }
+    ]
+  },
+  "block.wild_flower.germinate": {
+    "subtitle": "subtitles.wild_flower.germinate",
+    "sounds": [
+      {
+        "name": "item/sweet_berries/pick_from_bush1",
+        "volume": 0.6
+      },
+      {
+        "name": "item/sweet_berries/pick_from_bush2",
+        "volume": 0.6
+      }
+    ]
+  }
+}

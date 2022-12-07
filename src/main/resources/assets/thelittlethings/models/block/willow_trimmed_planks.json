@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelittlethings:block/willow_trimmed_planks_end",
+    "side": "thelittlethings:block/willow_trimmed_planks"
+  }
+}

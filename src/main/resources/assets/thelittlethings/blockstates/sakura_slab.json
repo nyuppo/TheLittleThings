@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelittlethings:block/sakura_slab"
+    },
+    "type=double": {
+      "model": "thelittlethings:block/sakura_planks"
+    },
+    "type=top": {
+      "model": "thelittlethings:block/sakura_slab_top"
+    }
+  }
+}

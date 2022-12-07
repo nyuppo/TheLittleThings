@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#thelittlethings:sakura_logs",
+    "#thelittlethings:azalea_logs",
+    "#thelittlethings:willow_logs",
+    "#thelittlethings:baobab_logs"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelittlethings:block/baobab_slab"
+    },
+    "type=double": {
+      "model": "thelittlethings:block/baobab_planks"
+    },
+    "type=top": {
+      "model": "thelittlethings:block/baobab_slab_top"
+    }
+  }
+}

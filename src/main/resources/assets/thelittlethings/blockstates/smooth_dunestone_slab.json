@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelittlethings:block/smooth_dunestone_slab"
+    },
+    "type=double": {
+      "model": "thelittlethings:block/smooth_dunestone"
+    },
+    "type=top": {
+      "model": "thelittlethings:block/smooth_dunestone_slab_top"
+    }
+  }
+}

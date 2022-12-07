@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/cube_column_uv_locked_x",
+  "textures": {
+    "end": "thelittlethings:block/bamboo_block_top",
+    "side": "thelittlethings:block/bamboo_block"
+  }
+}

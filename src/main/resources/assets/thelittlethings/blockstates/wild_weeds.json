@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "thelittlethings:block/wild_weeds"
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 90
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 180
+      },
+      {
+        "model": "thelittlethings:block/wild_weeds",
+        "y": 270
+      }
+    ]
+  }
+}

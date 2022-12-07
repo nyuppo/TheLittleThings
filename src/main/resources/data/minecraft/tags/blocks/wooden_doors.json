@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_door",
+    "thelittlethings:sakura_door",
+    "thelittlethings:azalea_door",
+    "thelittlethings:willow_door",
+    "thelittlethings:baobab_door",
+    "thelittlethings:paper_door"
+  ]
+}

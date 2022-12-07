@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_pressure_plate",
+    "thelittlethings:sakura_pressure_plate",
+    "thelittlethings:azalea_pressure_plate",
+    "thelittlethings:willow_pressure_plate",
+    "thelittlethings:baobab_pressure_plate"
+  ]
+}

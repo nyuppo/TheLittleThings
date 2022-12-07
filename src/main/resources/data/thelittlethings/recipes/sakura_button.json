@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "thelittlethings:sakura_planks"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:sakura_button"
+  }
+}

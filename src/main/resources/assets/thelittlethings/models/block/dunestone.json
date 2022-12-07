@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelittlethings:block/dunestone_top",
+    "side": "thelittlethings:block/dunestone_side"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:paper_wall",
+    "thelittlethings:full_paper_wall",
+    "thelittlethings:paper_door",
+    "thelittlethings:paper_trapdoor",
+    "thelittlethings:paper_sign",
+    "thelittlethings:paper_hanging_sign"
+  ]
+}

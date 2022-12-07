@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WW",
+    "WW"
+  ],
+  "key": {
+    "W": {
+      "item": "thelittlethings:paper_wall"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:full_paper_wall",
+    "count": 2
+  }
+}

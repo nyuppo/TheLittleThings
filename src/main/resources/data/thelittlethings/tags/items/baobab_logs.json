@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:baobab_log",
+    "thelittlethings:stripped_baobab_log",
+    "thelittlethings:baobab_wood",
+    "thelittlethings:stripped_baobab_wood"
+  ]
+}

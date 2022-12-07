@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/template_paper_lantern_hanging",
+    "textures": {
+        "side": "thelittlethings:block/lime_paper_lantern_side",
+        "top": "thelittlethings:block/lime_paper_lantern_top"
+    }
+}

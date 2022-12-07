@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:block/template_orientable_trapdoor_open_flipped",
+  "textures": {
+    "texture": "thelittlethings:block/baobab_trapdoor"
+  }
+}

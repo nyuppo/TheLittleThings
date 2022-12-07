@@ -1,0 +1,42 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nyuppo.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SignTypeAccessor",
+    "BlockEntityTypeMixin",
+    "FenceConnectMixin",
+    "WallConnectMixin",
+    "EntityPoseMixin",
+    "AnimationStateMixin",
+    "WearableItemsMixin",
+    "PiglinDropHeadMixin",
+    "CreeperDropMultipleHeadsMixin",
+    "HorseEntitySpeedMixin",
+    "TrunkPlacerTypeInvoker",
+    "FoliagePlacerTypeInvoker",
+    "BoatTypeMixin",
+    "BoatDropsMixin",
+    "ChestBoatDropsMixin",
+    "TreeConfiguredFeaturesAccessor",
+    "TreeFeatureConfigAccessor",
+    "CactusBlockMixin"
+  ],
+  "client": [
+    "ClientPlayerRidingAccessor",
+    "RaftInputMixin",
+    "ClientPlayerAccessor",
+    "ClientPlayerSignScreenMixin",
+    "TexturedRenderLayersMixin",
+    "SkullItemRendererMixin",
+    "PlayerFeatureMixin",
+    "ArmorStandFeatureMixin",
+    "BipedFeatureMixin",
+    "HeadFeatureFixMixin",
+    "CamelJumpMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

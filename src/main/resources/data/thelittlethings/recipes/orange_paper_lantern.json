@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thelittlethings:paper_lanterns"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:orange_paper_lantern"
+  },
+  "group": "dyed_paper_lantern"
+}

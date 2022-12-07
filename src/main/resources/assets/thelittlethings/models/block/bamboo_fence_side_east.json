@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:block/custom_fence_side_east",
+  "textures": {
+    "texture": "thelittlethings:block/bamboo_fence"
+  }
+}

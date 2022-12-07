@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thelittlethings:block/bamboo_block_x"
+    },
+    "axis=y": {
+      "model": "thelittlethings:block/bamboo_block_y"
+    },
+    "axis=z": {
+      "model": "thelittlethings:block/bamboo_block_z"
+    }
+  }
+}

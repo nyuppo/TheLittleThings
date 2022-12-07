@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/custom_fence_post",
+  "textures": {
+    "particle": "thelittlethings:block/bamboo_fence_particle",
+    "texture": "thelittlethings:block/bamboo_fence"
+  }
+}

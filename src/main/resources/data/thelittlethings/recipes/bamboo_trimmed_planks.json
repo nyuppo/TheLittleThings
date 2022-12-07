@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "trimmed_planks",
+  "key": {
+    "S": {
+      "item": "thelittlethings:bamboo_mosaic"
+    }
+  },
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "result": {
+    "count": 2,
+    "item": "thelittlethings:bamboo_trimmed_planks"
+  }
+}

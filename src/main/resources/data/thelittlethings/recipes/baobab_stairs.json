@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thelittlethings:baobab_planks"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:baobab_stairs",
+    "count": 4
+  }
+}

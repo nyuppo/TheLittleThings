@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:bamboo_fence_gate",
+    "thelittlethings:sakura_fence_gate",
+    "thelittlethings:azalea_fence_gate",
+    "thelittlethings:willow_fence_gate",
+    "thelittlethings:baobab_fence_gate"
+  ]
+}
