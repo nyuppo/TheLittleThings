@@ -4,6 +4,7 @@ import com.nyuppo.TheLittleThings;
 import com.nyuppo.block.*;
 import com.nyuppo.block.enums.WildFlowerColour;
 import com.nyuppo.mixin.SignTypeAccessor;
+import com.nyuppo.util.tags.ModBlockTags;
 import com.nyuppo.world.feature.tree.BaobabSaplingGenerator;
 import com.nyuppo.world.feature.tree.SakuraSaplingGenerator;
 import com.nyuppo.world.feature.tree.WillowSaplingGenerator;
@@ -162,6 +163,20 @@ public class ModBlocks {
     public static final Block WILLOW_TRIMMED_PLANKS = new PillarBlock(AbstractBlock.Settings.copy(WILLOW_PLANKS));
     public static final Block BAOBAB_TRIMMED_PLANKS = new PillarBlock(AbstractBlock.Settings.copy(BAOBAB_PLANKS));
 
+    // Hedges
+    public static final Block OAK_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block SPRUCE_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block BIRCH_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block JUNGLE_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block ACACIA_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block DARK_OAK_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block AZALEA_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque());
+    public static final Block FLOWERING_AZALEA_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES).nonOpaque());
+    public static final Block MANGROVE_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block SAKURA_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block WILLOW_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+    public static final Block BAOBAB_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
+
     public static final Block CHISELED_BOOKSHELF = new ChiseledBookshelfBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F).sounds(ModBlockSoundGroup.CHISELED_BOOKSHELF));
 
     // Oriental
@@ -255,7 +270,6 @@ public class ModBlocks {
     public static final Block BAOBAB_WALL_HANGING_SIGN = new WallHangingSignBlock(AbstractBlock.Settings.of(Material.WOOD, STRIPPED_BAOBAB_LOG.getDefaultMapColor()).noCollision().strength(1.0F).sounds(BlockSoundGroup.WOOD), BAOBAB_SIGN_TYPE);
     public static final Block PAPER_HANGING_SIGN = new HangingSignBlock(AbstractBlock.Settings.of(Material.WOOD, FULL_PAPER_WALL.getDefaultMapColor()).noCollision().strength(1.0F).sounds(ModBlockSoundGroup.BAMBOO_WOOD), PAPER_SIGN_TYPE);
     public static final Block PAPER_WALL_HANGING_SIGN = new WallHangingSignBlock(AbstractBlock.Settings.of(Material.WOOD, FULL_PAPER_WALL.getDefaultMapColor()).noCollision().strength(1.0F).sounds(ModBlockSoundGroup.BAMBOO_WOOD), PAPER_SIGN_TYPE);
-
 
     // Heads
     public static final Block PIGLIN_HEAD = new ModSkullBlock(ModSkullBlock.Type.PIGLIN, AbstractBlock.Settings.of(Material.DECORATION).strength(1.0F));
@@ -503,6 +517,20 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(WILLOW_TRIMMED_PLANKS, 5, 20);
         Registry.register(Registry.BLOCK, TheLittleThings.ID("baobab_trimmed_planks"), BAOBAB_TRIMMED_PLANKS);
         FlammableBlockRegistry.getDefaultInstance().add(BAOBAB_TRIMMED_PLANKS, 5, 20);
+
+        register("oak_hedge", OAK_HEDGE);
+        register("birch_hedge", BIRCH_HEDGE);
+        register("spruce_hedge", SPRUCE_HEDGE);
+        register("jungle_hedge", JUNGLE_HEDGE);
+        register("acacia_hedge", ACACIA_HEDGE);
+        register("dark_oak_hedge", DARK_OAK_HEDGE);
+        register("azalea_hedge", AZALEA_HEDGE);
+        register("flowering_azalea_hedge", FLOWERING_AZALEA_HEDGE);
+        register("mangrove_hedge", MANGROVE_HEDGE);
+        register("sakura_hedge", SAKURA_HEDGE);
+        register("willow_hedge", WILLOW_HEDGE);
+        register("baobab_hedge", BAOBAB_HEDGE);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlockTags.HEDGES, 30, 60);
 
         Registry.register(Registry.BLOCK, TheLittleThings.ID("chiseled_bookshelf"), CHISELED_BOOKSHELF);
 

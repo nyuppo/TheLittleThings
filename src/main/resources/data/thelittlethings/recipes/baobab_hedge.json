@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "thelittlethings:baobab_leaves"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:baobab_hedge",
+    "count": 6
+  }
+}

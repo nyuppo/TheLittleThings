@@ -1,0 +1,88 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_post",
+                "uvlock": true
+                }
+            },
+            {
+            "when": {
+                "north": "true"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side",
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "east": "true"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side",
+                    "y": 90,
+                    "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "south": "true"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side",
+                "y": 180,
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "west": "true"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side",
+                "y": 270,
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "north": "false"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side_flat",
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "east": "false"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side_flat",
+                "y": 90,
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "south": "false"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side_flat",
+                "y": 180,
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "west": "false"
+            },
+            "apply": {
+                "model": "thelittlethings:block/azalea_hedge_side_flat",
+                "y": 270,
+                "uvlock": true
+            }
+        }
+    ]
+}

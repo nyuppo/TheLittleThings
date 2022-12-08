@@ -34,7 +34,8 @@
     "ArmorStandFeatureMixin",
     "BipedFeatureMixin",
     "HeadFeatureFixMixin",
-    "CamelJumpMixin"
+    "CamelJumpMixin",
+    "LeavesRenderLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

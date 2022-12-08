@@ -1,0 +1,6 @@
+{
+    "parent": "thelittlethings:block/untinted_hedge_side",
+    "textures": {
+        "leaves": "minecraft:block/azalea_leaves"
+    }
+}

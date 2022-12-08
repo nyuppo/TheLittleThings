@@ -1,0 +1,6 @@
+{
+    "parent": "thelittlethings:block/hedge_side",
+    "textures": {
+        "leaves": "thelittlethings:block/willow_leaves"
+    }
+}

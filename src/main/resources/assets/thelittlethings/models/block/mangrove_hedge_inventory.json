@@ -1,0 +1,6 @@
+{
+    "parent": "thelittlethings:block/hedge_inventory",
+    "textures": {
+        "leaves": "minecraft:block/mangrove_leaves"
+    }
+}

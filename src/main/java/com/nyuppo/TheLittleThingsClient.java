@@ -77,20 +77,23 @@ public class TheLittleThingsClient implements ClientModInitializer {
                 ModBlocks.WILLOW_DOOR, ModBlocks.WILLOW_TRAPDOOR, ModBlocks.WILLOW_LEAVES, ModBlocks.WILLOW_SAPLING, ModBlocks.POTTED_WILLOW_SAPLING,
                 ModBlocks.BAOBAB_DOOR, ModBlocks.BAOBAB_TRAPDOOR, ModBlocks.BAOBAB_LEAVES, ModBlocks.BAOBAB_SAPLING, ModBlocks.POTTED_BAOBAB_SAPLING,
                 ModBlocks.WHITE_WILD_FLOWER, ModBlocks.ORANGE_WILD_FLOWER, ModBlocks.MAGENTA_WILD_FLOWER, ModBlocks.LIGHT_BLUE_WILD_FLOWER, ModBlocks.YELLOW_WILD_FLOWER, ModBlocks.LIME_WILD_FLOWER, ModBlocks.PINK_WILD_FLOWER, ModBlocks.CYAN_WILD_FLOWER, ModBlocks.PURPLE_WILD_FLOWER, ModBlocks.BLUE_WILD_FLOWER, ModBlocks.GREEN_WILD_FLOWER, ModBlocks.RED_WILD_FLOWER, ModBlocks.BLACK_WILD_FLOWER, ModBlocks.FIRE_WILD_FLOWER, ModBlocks.ICE_WILD_FLOWER, ModBlocks.GOLDEN_WILD_FLOWER, ModBlocks.WILD_WEEDS,
-                ModBlocks.POTTED_WHITE_WILD_FLOWER, ModBlocks.POTTED_ORANGE_WILD_FLOWER, ModBlocks.POTTED_MAGENTA_WILD_FLOWER, ModBlocks.POTTED_LIGHT_BLUE_WILD_FLOWER, ModBlocks.POTTED_YELLOW_WILD_FLOWER, ModBlocks.POTTED_LIME_WILD_FLOWER, ModBlocks.POTTED_PINK_WILD_FLOWER, ModBlocks.POTTED_CYAN_WILD_FLOWER, ModBlocks.POTTED_PURPLE_WILD_FLOWER, ModBlocks.POTTED_BLUE_WILD_FLOWER, ModBlocks.POTTED_GREEN_WILD_FLOWER, ModBlocks.POTTED_RED_WILD_FLOWER, ModBlocks.POTTED_BLACK_WILD_FLOWER, ModBlocks.POTTED_FIRE_WILD_FLOWER, ModBlocks.POTTED_ICE_WILD_FLOWER, ModBlocks.POTTED_GOLDEN_WILD_FLOWER, ModBlocks.POTTED_WILD_WEEDS);
+                ModBlocks.POTTED_WHITE_WILD_FLOWER, ModBlocks.POTTED_ORANGE_WILD_FLOWER, ModBlocks.POTTED_MAGENTA_WILD_FLOWER, ModBlocks.POTTED_LIGHT_BLUE_WILD_FLOWER, ModBlocks.POTTED_YELLOW_WILD_FLOWER, ModBlocks.POTTED_LIME_WILD_FLOWER, ModBlocks.POTTED_PINK_WILD_FLOWER, ModBlocks.POTTED_CYAN_WILD_FLOWER, ModBlocks.POTTED_PURPLE_WILD_FLOWER, ModBlocks.POTTED_BLUE_WILD_FLOWER, ModBlocks.POTTED_GREEN_WILD_FLOWER, ModBlocks.POTTED_RED_WILD_FLOWER, ModBlocks.POTTED_BLACK_WILD_FLOWER, ModBlocks.POTTED_FIRE_WILD_FLOWER, ModBlocks.POTTED_ICE_WILD_FLOWER, ModBlocks.POTTED_GOLDEN_WILD_FLOWER, ModBlocks.POTTED_WILD_WEEDS,
+                ModBlocks.OAK_HEDGE, ModBlocks.BIRCH_HEDGE, ModBlocks.SPRUCE_HEDGE, ModBlocks.JUNGLE_HEDGE, ModBlocks.ACACIA_HEDGE, ModBlocks.DARK_OAK_HEDGE, ModBlocks.AZALEA_HEDGE, ModBlocks.FLOWERING_AZALEA_HEDGE, ModBlocks.SAKURA_HEDGE, ModBlocks.WILLOW_HEDGE, ModBlocks.BAOBAB_HEDGE);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (world == null || pos == null) {
                 return FoliageColors.getDefaultColor();
             }
             return BiomeColors.getFoliageColor(world, pos);
-        }, ModBlocks.WILLOW_LEAVES, ModBlocks.BAOBAB_LEAVES);
+        }, ModBlocks.WILLOW_LEAVES, ModBlocks.BAOBAB_LEAVES,
+                ModBlocks.OAK_HEDGE, ModBlocks.BIRCH_HEDGE, ModBlocks.SPRUCE_HEDGE, ModBlocks.JUNGLE_HEDGE, ModBlocks.ACACIA_HEDGE, ModBlocks.DARK_OAK_HEDGE, ModBlocks.MANGROVE_HEDGE, ModBlocks.WILLOW_HEDGE, ModBlocks.BAOBAB_HEDGE);
 
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
             //BlockState blockState = ((BlockItem)stack.getItem()).getBlock().getDefaultState();
             //return BlockColors.create().getColor(blockState, null, null, tintIndex);
             return FoliageColors.getDefaultColor();
-        }, ModItems.WILLOW_LEAVES, ModItems.BAOBAB_LEAVES);
+        }, ModItems.WILLOW_LEAVES, ModItems.BAOBAB_LEAVES,
+                ModItems.OAK_HEDGE, ModItems.BIRCH_HEDGE, ModItems.SPRUCE_HEDGE, ModItems.JUNGLE_HEDGE, ModItems.ACACIA_HEDGE, ModItems.DARK_OAK_HEDGE, ModItems.MANGROVE_HEDGE, ModItems.WILLOW_HEDGE, ModItems.BAOBAB_HEDGE);
 
         ClientPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getHangingSignScreenPacketId(), (client, handler, buf, responseSender) -> {
             BlockPos pos = buf.readBlockPos();

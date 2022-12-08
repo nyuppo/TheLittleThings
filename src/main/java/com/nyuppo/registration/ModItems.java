@@ -27,6 +27,19 @@ public class ModItems {
     public static final Item WILLOW_LEAVES;
     public static final Item BAOBAB_LEAVES;
 
+    public static final Item OAK_HEDGE;
+    public static final Item BIRCH_HEDGE;
+    public static final Item SPRUCE_HEDGE;
+    public static final Item JUNGLE_HEDGE;
+    public static final Item ACACIA_HEDGE;
+    public static final Item DARK_OAK_HEDGE;
+    public static final Item AZALEA_HEDGE;
+    public static final Item FLOWERING_AZALEA_HEDGE;
+    public static final Item MANGROVE_HEDGE;
+    public static final Item SAKURA_HEDGE;
+    public static final Item WILLOW_HEDGE;
+    public static final Item BAOBAB_HEDGE;
+
     public static final Item WHITE_WILD_FLOWER;
     public static final Item ORANGE_WILD_FLOWER;
     public static final Item MAGENTA_WILD_FLOWER;
@@ -244,6 +257,31 @@ public class ModItems {
         PIGLIN_HEAD = Registry.register(Registry.ITEM, TheLittleThings.ID("piglin_head"), new VerticallyAttachableBlockItem(ModBlocks.PIGLIN_HEAD, ModBlocks.PIGLIN_HEAD_WALL, new Item.Settings().rarity(Rarity.UNCOMMON).group(ItemGroup.DECORATIONS), Direction.DOWN));
         WILLOW_LEAVES = Registry.register(Registry.ITEM, TheLittleThings.ID("willow_leaves"), new BlockItem(ModBlocks.WILLOW_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
         BAOBAB_LEAVES = Registry.register(Registry.ITEM, TheLittleThings.ID("baobab_leaves"), new BlockItem(ModBlocks.BAOBAB_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        OAK_HEDGE = register("oak_hedge", ModBlocks.OAK_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        BIRCH_HEDGE = register("birch_hedge", ModBlocks.BIRCH_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        SPRUCE_HEDGE = register("spruce_hedge", ModBlocks.SPRUCE_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        JUNGLE_HEDGE = register("jungle_hedge", ModBlocks.JUNGLE_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        ACACIA_HEDGE = register("acacia_hedge", ModBlocks.ACACIA_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        DARK_OAK_HEDGE = register("dark_oak_hedge", ModBlocks.DARK_OAK_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        AZALEA_HEDGE = register("azalea_hedge", ModBlocks.AZALEA_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        FLOWERING_AZALEA_HEDGE = register("flowering_azalea_hedge", ModBlocks.FLOWERING_AZALEA_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        MANGROVE_HEDGE = register("mangrove_hedge", ModBlocks.MANGROVE_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        SAKURA_HEDGE = register("sakura_hedge", ModBlocks.SAKURA_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        WILLOW_HEDGE = register("willow_hedge", ModBlocks.WILLOW_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        BAOBAB_HEDGE = register("baobab_hedge", ModBlocks.BAOBAB_HEDGE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        CompostingChanceRegistry.INSTANCE.add(OAK_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(BIRCH_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(SPRUCE_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(JUNGLE_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ACACIA_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(DARK_OAK_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(AZALEA_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(FLOWERING_AZALEA_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(MANGROVE_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(SAKURA_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(WILLOW_HEDGE, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(BAOBAB_HEDGE, 0.3F);
 
         WHITE_WILD_FLOWER = registerWildFlower("white_wild_flower", ModBlocks.WHITE_WILD_FLOWER);
         CompostingChanceRegistry.INSTANCE.add(WHITE_WILD_FLOWER, 0.65F);

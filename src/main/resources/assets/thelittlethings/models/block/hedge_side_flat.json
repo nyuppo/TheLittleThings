@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "#leaves",
+		"particle": "#leaves"
+	},
+	"elements": [
+		{
+			"name": "side",
+			"from": [5, 0, 5],
+			"to": [11, 16, 11],
+			"faces": {
+				"north": {"uv": [5, 0, 11, 16], "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

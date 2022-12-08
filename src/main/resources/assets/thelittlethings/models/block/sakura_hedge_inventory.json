@@ -1,0 +1,6 @@
+{
+    "parent": "thelittlethings:block/untinted_hedge_inventory",
+    "textures": {
+        "leaves": "thelittlethings:block/sakura_leaves"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "thelittlethings:block/hedge_side_flat",
+    "textures": {
+        "leaves": "minecraft:block/mangrove_leaves"
+    }
+}
