@@ -236,6 +236,9 @@ public class ModItems {
         register("crab_claw", new Item(new Item.Settings().group(ItemGroup.MISC)));
         register("pincer", new PincerItem(ToolMaterials.IRON, 3, -2.4F, new Item.Settings().group(ItemGroup.COMBAT).maxCount(1)));
 
+        register("display_case", ModBlocks.DISPLAY_CASE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("glass_display_case", ModBlocks.GLASS_DISPLAY_CASE, new Item.Settings().group(ItemGroup.DECORATIONS));
+
         BoatItems.registerBoats();
     }
 

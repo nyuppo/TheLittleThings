@@ -3,6 +3,7 @@ package com.nyuppo;
 import com.nyuppo.block.entity.HangingSignBlockEntity;
 import com.nyuppo.block.entity.ModBlockEntityType;
 import com.nyuppo.client.gui.HangingSignEditScreen;
+import com.nyuppo.client.render.block.DisplayCaseBlockRenderer;
 import com.nyuppo.client.render.block.HangingSignBlockEntityRenderer;
 import com.nyuppo.client.render.block.ModSkullBlockEntityRenderer;
 import com.nyuppo.client.render.entity.CamelEntityRenderer;
@@ -69,6 +70,7 @@ public class TheLittleThingsClient implements ClientModInitializer {
 
         BlockEntityRendererRegistry.register(ModBlockEntityType.HANGING_SIGN, HangingSignBlockEntityRenderer::new);
         BlockEntityRendererRegistry.register(ModBlockEntityType.SKULL, ModSkullBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(ModBlockEntityType.DISPLAY_CASE, DisplayCaseBlockRenderer::new);
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
                 ModBlocks.BAMBOO_DOOR, ModBlocks.BAMBOO_TRAPDOOR,
@@ -79,6 +81,8 @@ public class TheLittleThingsClient implements ClientModInitializer {
                 ModBlocks.WHITE_WILD_FLOWER, ModBlocks.ORANGE_WILD_FLOWER, ModBlocks.MAGENTA_WILD_FLOWER, ModBlocks.LIGHT_BLUE_WILD_FLOWER, ModBlocks.YELLOW_WILD_FLOWER, ModBlocks.LIME_WILD_FLOWER, ModBlocks.PINK_WILD_FLOWER, ModBlocks.CYAN_WILD_FLOWER, ModBlocks.PURPLE_WILD_FLOWER, ModBlocks.BLUE_WILD_FLOWER, ModBlocks.GREEN_WILD_FLOWER, ModBlocks.RED_WILD_FLOWER, ModBlocks.BLACK_WILD_FLOWER, ModBlocks.FIRE_WILD_FLOWER, ModBlocks.ICE_WILD_FLOWER, ModBlocks.GOLDEN_WILD_FLOWER, ModBlocks.WILD_WEEDS,
                 ModBlocks.POTTED_WHITE_WILD_FLOWER, ModBlocks.POTTED_ORANGE_WILD_FLOWER, ModBlocks.POTTED_MAGENTA_WILD_FLOWER, ModBlocks.POTTED_LIGHT_BLUE_WILD_FLOWER, ModBlocks.POTTED_YELLOW_WILD_FLOWER, ModBlocks.POTTED_LIME_WILD_FLOWER, ModBlocks.POTTED_PINK_WILD_FLOWER, ModBlocks.POTTED_CYAN_WILD_FLOWER, ModBlocks.POTTED_PURPLE_WILD_FLOWER, ModBlocks.POTTED_BLUE_WILD_FLOWER, ModBlocks.POTTED_GREEN_WILD_FLOWER, ModBlocks.POTTED_RED_WILD_FLOWER, ModBlocks.POTTED_BLACK_WILD_FLOWER, ModBlocks.POTTED_FIRE_WILD_FLOWER, ModBlocks.POTTED_ICE_WILD_FLOWER, ModBlocks.POTTED_GOLDEN_WILD_FLOWER, ModBlocks.POTTED_WILD_WEEDS,
                 ModBlocks.OAK_HEDGE, ModBlocks.BIRCH_HEDGE, ModBlocks.SPRUCE_HEDGE, ModBlocks.JUNGLE_HEDGE, ModBlocks.ACACIA_HEDGE, ModBlocks.DARK_OAK_HEDGE, ModBlocks.AZALEA_HEDGE, ModBlocks.FLOWERING_AZALEA_HEDGE, ModBlocks.SAKURA_HEDGE, ModBlocks.WILLOW_HEDGE, ModBlocks.BAOBAB_HEDGE);
+
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.DISPLAY_CASE, ModBlocks.GLASS_DISPLAY_CASE);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (world == null || pos == null) {

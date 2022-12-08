@@ -12,6 +12,7 @@ public class ModBlockEntityType<T extends BlockEntity> {
     public static final BlockEntityType<ChiseledBookshelfBlockEntity> CHISELED_BOOKSHELF;
     public static final BlockEntityType<HangingSignBlockEntity> HANGING_SIGN;
     public static final BlockEntityType<ModSkullBlockEntity> SKULL;
+    public static final BlockEntityType<DisplayCaseBlockEntity> DISPLAY_CASE;
 
     public static void registerBlockEntityTypes() {
 
@@ -36,6 +37,6 @@ public class ModBlockEntityType<T extends BlockEntity> {
                 ModBlocks.BAOBAB_HANGING_SIGN, ModBlocks.BAOBAB_WALL_HANGING_SIGN,
                 ModBlocks.PAPER_HANGING_SIGN, ModBlocks.PAPER_WALL_HANGING_SIGN).build());
         SKULL = Registry.register(Registry.BLOCK_ENTITY_TYPE, TheLittleThings.ID("skull"), FabricBlockEntityTypeBuilder.create(ModSkullBlockEntity::new, ModBlocks.PIGLIN_HEAD, ModBlocks.PIGLIN_HEAD_WALL).build());
-
+        DISPLAY_CASE = Registry.register(Registry.BLOCK_ENTITY_TYPE, TheLittleThings.ID("display_case"), FabricBlockEntityTypeBuilder.create(DisplayCaseBlockEntity::new, ModBlocks.DISPLAY_CASE, ModBlocks.GLASS_DISPLAY_CASE).build());
     }
 }

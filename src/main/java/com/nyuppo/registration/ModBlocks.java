@@ -311,6 +311,9 @@ public class ModBlocks {
     public static final Block WILD_WEEDS = new WildFlowerBlock(WildFlowerColour.WEED, StatusEffects.POISON, 6, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().ticksRandomly().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).offsetType(AbstractBlock.OffsetType.XZ));
     public static final Block POTTED_WILD_WEEDS = new FlowerPotBlock(WILD_WEEDS, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
 
+    public static final Block DISPLAY_CASE = new DisplayCaseBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.0F).sounds(BlockSoundGroup.WOOD));
+    public static final Block GLASS_DISPLAY_CASE = new GlassDisplayCaseBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.0F).sounds(BlockSoundGroup.WOOD));
+
     public static void registerBlocks() {
         // Bamboo Wood
         Registry.register(Registry.BLOCK, TheLittleThings.ID("bamboo_block"), BAMBOO_BLOCK);
@@ -630,6 +633,9 @@ public class ModBlocks {
         register("potted_golden_wild_flower", POTTED_GOLDEN_WILD_FLOWER);
         register("wild_weeds", WILD_WEEDS);
         register("potted_wild_weeds", POTTED_WILD_WEEDS);
+
+        register("display_case", DISPLAY_CASE);
+        register("glass_display_case", GLASS_DISPLAY_CASE);
     }
 
     private static Block register(String id, Block entry) {
