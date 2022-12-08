@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  P",
+    " S ",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "thelittlethings:crab_claw"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:pincer"
+  }
+}

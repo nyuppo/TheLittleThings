@@ -18,6 +18,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.FallibleItemDispenserBehavior;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -25,11 +27,14 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPointer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.example.GeckoLibMod;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class TheLittleThings implements ModInitializer {
     public static final String MOD_ID = "thelittlethings";
@@ -85,6 +90,16 @@ public class TheLittleThings implements ModInitializer {
 
                 }
             }
+        }));
+
+        ServerPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getPincerPullPacketId(), ((server, player, handler, buf, responseSender) -> {
+            UUID uuid = buf.readUuid();
+            double d = buf.readDouble();
+            double e = buf.readDouble();
+            double f = buf.readDouble();
+
+            Entity entity = server.getOverworld().getEntity(uuid);
+            entity.setVelocity(new Vec3d(d, e + 2.0D, f).multiply(0.15D));
         }));
     }
 

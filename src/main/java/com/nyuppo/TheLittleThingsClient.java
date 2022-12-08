@@ -13,6 +13,8 @@ import com.nyuppo.client.render.entity.model.ChestRaftEntityModel;
 import com.nyuppo.client.render.entity.model.PiglinHeadEntityModel;
 import com.nyuppo.client.render.entity.model.RaftEntityModel;
 import com.nyuppo.entity.ModEntityTypes;
+import com.nyuppo.entity.passive.renderer.CrabRenderer;
+import com.nyuppo.entity.passive.renderer.PenguinRenderer;
 import com.nyuppo.entity.vehicle.RaftEntity;
 import com.nyuppo.network.TheLittleThingsNetworkingConstants;
 import com.nyuppo.registration.ModBlocks;
@@ -36,8 +38,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.SignType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.UUID;
 
 public class TheLittleThingsClient implements ClientModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(TheLittleThings.MOD_ID + "client");
@@ -55,6 +60,8 @@ public class TheLittleThingsClient implements ClientModInitializer {
         }
 
         EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.CAMEL, CamelEntityModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntityTypes.PENGUIN, PenguinRenderer::new);
+        EntityRendererRegistry.register(ModEntityTypes.CRAB, CrabRenderer::new);
 
         EntityRendererRegistry.register(ModEntityTypes.RAFT, (context) -> new RaftEntityRenderer(context, false));
         EntityRendererRegistry.register(ModEntityTypes.CHEST_RAFT, (context) -> new RaftEntityRenderer(context, true));
@@ -102,6 +109,16 @@ public class TheLittleThingsClient implements ClientModInitializer {
             //((PlayerEntitySignScreenAccess)client.player).editHangingSignScreen((HangingSignBlockEntity) blockEntity);
             //setScreen(new SignEditScreen(sign, this.client.shouldFilterText()));
 
+        });
+
+        ClientPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getPincerAttackPacketId(), (client, handler, buf, responseSender) -> {
+            double d = buf.readDouble();
+            double e = buf.readDouble();
+            double f = buf.readDouble();
+
+            if (client.player != null) {
+                client.player.setVelocity(new Vec3d(d, e + 2.0D, f).multiply(0.15D));
+            }
         });
     }
 }

@@ -183,6 +183,21 @@
   "subtitles.entity.camel.step": "Camel steps",
   "subtitles.entity.camel.step_sand": "Camel sands",
 
+  "entity.thelittlethings.penguin": "Penguin",
+  "item.thelittlethings.penguin_spawn_egg": "Penguin Spawn Egg",
+  "subtitles.thelittlethings.penguin_ambient": "Penguin squawks",
+  "subtitles.thelittlethings.penguin_hurt": "Penguin hurts",
+  "subtitles.thelittlethings.penguin_death": "Penguin dies",
+
+  "entity.thelittlethings.crab": "Crab",
+  "item.thelittlethings.crab_spawn_egg": "Crab Spawn Egg",
+  "subtitles.thelittlethings.crab_ambient": "Crab clicks",
+  "subtitles.thelittlethings.crab_hurt": "Crab hurts",
+  "item.thelittlethings.crab_leg": "Crab Leg",
+  "item.thelittlethings.cooked_crab_leg": "Cooked Crab Leg",
+  "item.thelittlethings.crab_claw": "Crab Claw",
+  "item.thelittlethings.pincer": "Pincer",
+
   "block.thelittlethings.piglin_head": "Piglin Head",
 
   "block.thelittlethings.white_wild_flower": "White Wild Flower",

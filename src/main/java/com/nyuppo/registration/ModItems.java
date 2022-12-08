@@ -4,6 +4,7 @@ import com.nyuppo.TheLittleThings;
 import com.nyuppo.entity.ModEntityTypes;
 import com.nyuppo.entity.vehicle.RaftEntity;
 import com.nyuppo.item.HangingSignItem;
+import com.nyuppo.item.PincerItem;
 import com.nyuppo.item.RaftItem;
 import com.nyuppo.item.VerticallyAttachableBlockItem;
 import com.nyuppo.util.ModBoatType;
@@ -11,6 +12,8 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.DispenserBlock;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -212,6 +215,13 @@ public class ModItems {
         Registry.register(Registry.ITEM, TheLittleThings.ID("paper_hanging_sign"), new HangingSignItem(ModBlocks.PAPER_HANGING_SIGN, ModBlocks.PAPER_WALL_HANGING_SIGN, new Item.Settings().group(ItemGroup.DECORATIONS).maxCount(16)));
 
         Registry.register(Registry.ITEM, TheLittleThings.ID("camel_spawn_egg"), new SpawnEggItem(ModEntityTypes.getCamel(),16565097, 13341495, new Item.Settings().group(ItemGroup.MISC)));
+        register("penguin_spawn_egg", new SpawnEggItem(ModEntityTypes.PENGUIN, 1776418, 15198183, new Item.Settings().group(ItemGroup.MISC)));
+        register("crab_spawn_egg", new SpawnEggItem(ModEntityTypes.CRAB, 13846818, 15722172, new Item.Settings().group(ItemGroup.MISC)));
+
+        register("crab_leg", new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(1).saturationModifier(0.1F).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 1), 0.25F).meat().build())));
+        register("cooked_crab_leg", new Item(new Item.Settings().group(ItemGroup.FOOD).food((new FoodComponent.Builder()).hunger(5).saturationModifier(0.5F).meat().build())));
+        register("crab_claw", new Item(new Item.Settings().group(ItemGroup.MISC)));
+        register("pincer", new PincerItem(ToolMaterials.IRON, 3, -2.4F, new Item.Settings().group(ItemGroup.COMBAT).maxCount(1)));
 
         BoatItems.registerBoats();
     }

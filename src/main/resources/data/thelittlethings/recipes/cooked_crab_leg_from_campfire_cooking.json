@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "thelittlethings:crab_leg"
+  },
+  "result": "thelittlethings:cooked_crab_leg",
+  "experience": 0.35,
+  "cookingtime": 600
+}

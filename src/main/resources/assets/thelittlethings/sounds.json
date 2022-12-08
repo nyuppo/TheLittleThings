@@ -603,5 +603,38 @@
         "volume": 0.6
       }
     ]
+  },
+  "entity.penguin.ambient": {
+    "subtitle": "subtitles.thelittlethings.penguin_ambient",
+    "sounds": [
+      "thelittlethings:mob/penguin/penguin_idle1",
+      "thelittlethings:mob/penguin/penguin_idle2"
+    ]
+  },
+  "entity.penguin.hurt": {
+    "subtitle": "subtitles.thelittlethings.penguin_hurt",
+    "sounds": [
+      "thelittlethings:mob/penguin/penguin_hurt"
+    ]
+  },
+  "entity.penguin.death": {
+    "subtitle": "subtitles.thelittlethings.penguin_death",
+    "sounds": [
+      "thelittlethings:mob/penguin/penguin_hurt"
+    ]
+  },
+  "entity.crab.ambient": {
+    "subtitle": "subtitles.thelittlethings.crab_ambient",
+    "sounds": [
+      "thelittlethings:mob/crab/crab_ambient_0",
+      "thelittlethings:mob/crab/crab_ambient_1",
+      "thelittlethings:mob/crab/crab_ambient_2"
+    ]
+  },
+  "entity.crab.hurt": {
+    "subtitle": "subtitles.thelittlethings.crab_hurt",
+    "sounds": [
+      "thelittlethings:mob/crab/crab_damage"
+    ]
   }
 }

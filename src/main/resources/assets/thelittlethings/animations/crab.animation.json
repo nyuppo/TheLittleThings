@@ -1,0 +1,161 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crab.idle": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 90) * 1", 0, "Math.cos(query.anim_time * 90 + 90) * 0.5"]
+					}
+				},
+				"eye_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 90) * 2", 0, "Math.cos(query.anim_time * 90 + 90) * 2"]
+					}
+				},
+				"eye_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 90 + 180) * 2", 0, "Math.cos(query.anim_time * 90 + 270) * 2"]
+					}
+				},
+				"claw_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 90) * 1", 0, "Math.cos(query.anim_time * 90 + 90) * 0.5"]
+					}
+				},
+				"claw_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 90) * 1", 0, "Math.cos(query.anim_time * 90 + 90) * 0.5"]
+					}
+				}
+			}
+		},
+		"animation.crab.walk": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 540 + 75) * 2", "Math.cos(query.anim_time * 270 + 75) * 4", 0]
+					}
+				},
+				"eye_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 540 + 75) * 2", "Math.cos(query.anim_time * 270 + 75) * 4", 0]
+					}
+				},
+				"eye_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 540 + 75) * 2", "Math.cos(query.anim_time * 270 + 75) * 4", 0]
+					}
+				},
+				"leg_L1": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540) * 8", "Math.clamp(Math.cos(query.anim_time * 540 + 90), 0, 1) * -8"]
+					}
+				},
+				"leg_L2": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 90) * -8", "Math.clamp(Math.cos(query.anim_time * 540), 0, 1) * -8"]
+					}
+				},
+				"leg_L3": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 45) * 8", "Math.clamp(Math.cos(query.anim_time * 540 + 135), 0, 1) * -8"]
+					}
+				},
+				"leg_L4": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 135) * -8", "Math.clamp(Math.cos(query.anim_time * 540 + 45), 0, 1) * -8"]
+					}
+				},
+				"leg_R1": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540) * -8", "Math.clamp(Math.cos(query.anim_time * 540 + 90), 0, 1) * -8"]
+					}
+				},
+				"leg_R2": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 90) * 8", "Math.clamp(Math.cos(query.anim_time * 540), 0, 1) * -8"]
+					}
+				},
+				"leg_R3": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 45) * -8", "Math.clamp(Math.cos(query.anim_time * 540 + 135), 0, 1) * -8"]
+					}
+				},
+				"leg_R4": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 540 + 135) * 8", "Math.clamp(Math.cos(query.anim_time * 540 + 45), 0, 1) * -8"]
+					}
+				},
+				"claw_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 540) * 2", "Math.cos(query.anim_time * 270) * 4", 0]
+					}
+				},
+				"claw_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 540 + 105) * 2", "Math.cos(query.anim_time * 270 + 105) * 4", 0]
+					}
+				}
+			}
+		},
+		"animation.crab.dance": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 768) * 5 -10", 0, "Math.cos(query.anim_time * 384) * 5"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 768 + 180) * -0.5  + 0.5", 0]
+					}
+				},
+				"eye_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 768) * 5 -10", 0, "Math.cos(query.anim_time * 384) * 5"]
+					}
+				},
+				"eye_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 768) * 5 -10", 0, "Math.cos(query.anim_time * 384 + 180) * 5"]
+					}
+				},
+				"legs_L": {
+					"rotation": {
+						"vector": [0, 0, "Math.cos(query.anim_time * 768) * 5"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 768) * 0.5", 0]
+					}
+				},
+				"legs_R": {
+					"rotation": {
+						"vector": [0, 0, "Math.cos(query.anim_time * 768 + 180) * 5"]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 768 + 180) * -0.5", 0]
+					}
+				},
+				"claw_L": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 768) * 5 -30", "Math.cos(query.anim_time * 768) * 10 -25", "Math.cos(query.anim_time * 768) * 5"]
+					},
+					"position": {
+						"vector": [0.5, 0, -0.5]
+					}
+				},
+				"claw_R": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 768) * 5 -30", "Math.cos(query.anim_time * 768 + 180) * 10 + 25", "Math.cos(query.anim_time * 768 + 180) * 5"]
+					},
+					"position": {
+						"vector": [-0.5, 0, -0.5]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

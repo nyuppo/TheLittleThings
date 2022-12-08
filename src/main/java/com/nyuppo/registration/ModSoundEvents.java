@@ -42,6 +42,13 @@ public class ModSoundEvents {
     public static SoundEvent ENTITY_CAMEL_STEP = new SoundEvent(TheLittleThings.ID("entity.camel.step"));
     public static SoundEvent ENTITY_CAMEL_STEP_SAND = new SoundEvent(TheLittleThings.ID("entity.camel.step_sand"));
 
+    public static SoundEvent ENTITY_PENGUIN_AMBIENT = new SoundEvent(TheLittleThings.ID("entity.penguin.ambient"));
+    public static SoundEvent ENTITY_PENGUIN_HURT = new SoundEvent(TheLittleThings.ID("entity.penguin.hurt"));
+    public static SoundEvent ENTITY_PENGUIN_DEATH = new SoundEvent(TheLittleThings.ID("entity.penguin.death"));
+
+    public static SoundEvent ENTITY_CRAB_AMBIENT = new SoundEvent(TheLittleThings.ID("entity.crab.ambient"));
+    public static SoundEvent ENTITY_CRAB_HURT = new SoundEvent(TheLittleThings.ID("entity.crab.hurt"));
+
     public static SoundEvent WILD_FLOWER_BLOOM = new SoundEvent(TheLittleThings.ID("block.wild_flower.bloom"));
     public static SoundEvent WILD_FLOWER_GERMINATE = new SoundEvent(TheLittleThings.ID("block.wild_flower.germinate"));
 
@@ -81,6 +88,13 @@ public class ModSoundEvents {
         Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.camel.stand"), ENTITY_CAMEL_STAND);
         Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.camel.step"), ENTITY_CAMEL_STEP);
         Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.camel.step_sand"), ENTITY_CAMEL_STEP_SAND);
+
+        Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.penguin.ambient"), ENTITY_PENGUIN_AMBIENT);
+        Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.penguin.hurt"), ENTITY_PENGUIN_HURT);
+        Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.penguin.death"), ENTITY_PENGUIN_DEATH);
+
+        Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.crab.ambient"), ENTITY_CRAB_AMBIENT);
+        Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("entity.crab.hurt"), ENTITY_CRAB_HURT);
 
         Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("block.wild_flower.bloom"), WILD_FLOWER_BLOOM);
         Registry.register(Registry.SOUND_EVENT, TheLittleThings.ID("block.wild_flower.germinate"), WILD_FLOWER_GERMINATE);
