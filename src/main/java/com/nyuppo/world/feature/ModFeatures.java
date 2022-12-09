@@ -5,6 +5,7 @@ import com.nyuppo.TheLittleThings;
 import com.nyuppo.registration.ModBlocks;
 import com.nyuppo.util.WeightedRandomBag;
 import com.nyuppo.world.feature.natural.BlobReplacerFeature;
+import com.nyuppo.world.feature.natural.FairyRingFeature;
 import com.nyuppo.world.feature.natural.FallenTreeFeature;
 import com.nyuppo.world.feature.natural.WildFlowerFeature;
 import com.nyuppo.world.gen.*;
@@ -91,6 +92,10 @@ public class ModFeatures {
     public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> DARK_OAK_WILD_FLOWERS_CONFIGURED;
     public static final RegistryEntry<PlacedFeature> DARK_OAK_WILD_FLOWERS_PLACED;
 
+    public static final Feature<DefaultFeatureConfig> FAIRY_RING;
+    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> FAIRY_RING_CONFIGURED;
+    public static final RegistryEntry<PlacedFeature> FAIRY_RING_PLACED;
+
     public static <FC extends FeatureConfig, F extends Feature<FC>> RegistryEntry<ConfiguredFeature<?, ?>> register(String id, F feature, FC config) {
         return BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, TheLittleThings.ID(id), new ConfiguredFeature<FC, F>(feature, config));
     }
@@ -168,5 +173,9 @@ public class ModFeatures {
         )), 8, 0.2d));
         DARK_OAK_WILD_FLOWERS_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS, FeatureConfig.DEFAULT);
         DARK_OAK_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+
+        FAIRY_RING = register("fairy_ring", new FairyRingFeature(DefaultFeatureConfig.CODEC));
+        FAIRY_RING_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("fairy_ring"), FAIRY_RING, FeatureConfig.DEFAULT);
+        FAIRY_RING_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("fairy_ring"), FAIRY_RING_CONFIGURED, List.of(RarityFilterPlacementModifier.of(200), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
     }
 }

@@ -20,11 +20,13 @@ public class ModWorldGen {
     private static final Predicate<BiomeSelectionContext> ACACIA_FALLEN_TREE_BIOMES = BiomeSelectors.includeByKey(BiomeKeys.SAVANNA, BiomeKeys.SAVANNA_PLATEAU, BiomeKeys.WINDSWEPT_SAVANNA);
     private static final Predicate<BiomeSelectionContext> JUNGLE_FALLEN_TREE_BIOMES = BiomeSelectors.includeByKey(BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE);
     private static final Predicate<BiomeSelectionContext> SWAMP_BIOME = BiomeSelectors.includeByKey(BiomeKeys.SWAMP);
+    private static final Predicate<BiomeSelectionContext> FAIRY_RING_BIOMES = BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.PLAINS, BiomeKeys.BIRCH_FOREST, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, BiomeKeys.FLOWER_FOREST, BiomeKeys.SUNFLOWER_PLAINS, BiomeKeys.DARK_FOREST, ModBiomes.SAKURA_FOREST);
 
     private static void doModifications() {
         addSakuraTrees();
         addFallenTrees();
         modifySwamp();
+        addFairyRings();
         addWildFlowers();
     }
 
@@ -75,6 +77,13 @@ public class ModWorldGen {
         BiomeModifications.create(TheLittleThings.ID("wild_flowers_dark_oak_forest"))
                 .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST), (c) -> {
                     c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.DARK_OAK_WILD_FLOWERS_PLACED.getKey().get());
+                });
+    }
+
+    private static void addFairyRings() {
+        BiomeModifications.create(TheLittleThings.ID("fairy_rigs"))
+                .add(ModificationPhase.ADDITIONS, FAIRY_RING_BIOMES, (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FAIRY_RING_PLACED.getKey().get());
                 });
     }
 
