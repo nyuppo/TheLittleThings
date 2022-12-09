@@ -25,6 +25,7 @@ public class ModWorldGen {
         addSakuraTrees();
         addFallenTrees();
         modifySwamp();
+        addWildFlowers();
     }
 
     private static void addSakuraTrees() {
@@ -64,6 +65,17 @@ public class ModWorldGen {
         BiomeModifications.create(TheLittleThings.ID("fallen_trees_willow")).add(ModificationPhase.ADDITIONS, SWAMP_BIOME, biomeModificationContext -> {
             biomeModificationContext.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FALLEN_WILLOW_TREE_PLACED.getKey().get());
         });
+    }
+
+    private static void addWildFlowers() {
+        BiomeModifications.create(TheLittleThings.ID("wild_flowers_tall_birch_forest"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.TALL_BIRCH_WILD_FLOWERS_PLACED.getKey().get());
+                });
+        BiomeModifications.create(TheLittleThings.ID("wild_flowers_dark_oak_forest"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.DARK_OAK_WILD_FLOWERS_PLACED.getKey().get());
+                });
     }
 
     public static void init() {

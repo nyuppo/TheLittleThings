@@ -3,13 +3,16 @@ package com.nyuppo.world.feature;
 import com.google.common.collect.ImmutableList;
 import com.nyuppo.TheLittleThings;
 import com.nyuppo.registration.ModBlocks;
+import com.nyuppo.util.WeightedRandomBag;
 import com.nyuppo.world.feature.natural.BlobReplacerFeature;
 import com.nyuppo.world.feature.natural.FallenTreeFeature;
+import com.nyuppo.world.feature.natural.WildFlowerFeature;
 import com.nyuppo.world.gen.*;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Pair;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
@@ -29,6 +32,7 @@ import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.LeavesVineTreeDecorator;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class ModFeatures {
@@ -79,6 +83,13 @@ public class ModFeatures {
     public static final Feature<DefaultFeatureConfig> COARSE_DIRT_BLOB;
     public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> COARSE_DIRT_BLOB_CONFIGURED;
     public static final RegistryEntry<PlacedFeature> COARSE_DIRT_BLOB_PLACED;
+
+    public static final Feature<DefaultFeatureConfig> TALL_BIRCH_WILD_FLOWERS;
+    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> TALL_BIRCH_WILD_FLOWERS_CONFIGURED;
+    public static final RegistryEntry<PlacedFeature> TALL_BIRCH_WILD_FLOWERS_PLACED;
+    public static final Feature<DefaultFeatureConfig> DARK_OAK_WILD_FLOWERS;
+    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> DARK_OAK_WILD_FLOWERS_CONFIGURED;
+    public static final RegistryEntry<PlacedFeature> DARK_OAK_WILD_FLOWERS_PLACED;
 
     public static <FC extends FeatureConfig, F extends Feature<FC>> RegistryEntry<ConfiguredFeature<?, ?>> register(String id, F feature, FC config) {
         return BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, TheLittleThings.ID(id), new ConfiguredFeature<FC, F>(feature, config));
@@ -142,5 +153,20 @@ public class ModFeatures {
         COARSE_DIRT_BLOB = register("coarse_dirt_blob", new BlobReplacerFeature(DefaultFeatureConfig.CODEC, UniformIntProvider.create(2, 6), UniformIntProvider.create(2, 3), Blocks.COARSE_DIRT.getDefaultState(), Blocks.DIRT, Blocks.GRASS_BLOCK));
         COARSE_DIRT_BLOB_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("coarse_dirt_blob"), COARSE_DIRT_BLOB, FeatureConfig.DEFAULT);
         COARSE_DIRT_BLOB_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("coarse_dirt_blob"), COARSE_DIRT_BLOB_CONFIGURED, List.of(CountPlacementModifier.of(1), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+
+        TALL_BIRCH_WILD_FLOWERS = register("tall_birch_wild_flowers", new WildFlowerFeature(DefaultFeatureConfig.CODEC, new WeightedRandomBag<>(Arrays.asList(
+                new Pair<>(ModBlocks.WHITE_WILD_FLOWER, 50.0D),
+                new Pair<>(ModBlocks.PURPLE_WILD_FLOWER, 40.0D),
+                new Pair<>(ModBlocks.LIGHT_BLUE_WILD_FLOWER, 10.0D)
+        )), 8, 0.2d));
+        TALL_BIRCH_WILD_FLOWERS_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("tall_birch_wild_flowers"), TALL_BIRCH_WILD_FLOWERS, FeatureConfig.DEFAULT);
+        TALL_BIRCH_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("tall_birch_wild_flowers"), TALL_BIRCH_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+        DARK_OAK_WILD_FLOWERS = register("dark_oak_wild_flowers", new WildFlowerFeature(DefaultFeatureConfig.CODEC, new WeightedRandomBag<>(Arrays.asList(
+                new Pair<>(ModBlocks.RED_WILD_FLOWER, 50.0D),
+                new Pair<>(ModBlocks.YELLOW_WILD_FLOWER, 45.0D),
+                new Pair<>(ModBlocks.MAGENTA_WILD_FLOWER, 5.0D)
+        )), 8, 0.2d));
+        DARK_OAK_WILD_FLOWERS_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS, FeatureConfig.DEFAULT);
+        DARK_OAK_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
     }
 }
