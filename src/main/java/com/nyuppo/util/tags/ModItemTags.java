@@ -8,6 +8,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItemTags {
     public static final TagKey<Item> BOOKSHELF_BOOKS = of("bookshelf_books");
+    public static final TagKey<Item> HATS = of("hats");
 
     private static TagKey<Item> of(String id) { return TagKey.of(Registry.ITEM.getKey(), new Identifier(TheLittleThings.MOD_ID, id));}
 }

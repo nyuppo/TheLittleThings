@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/crown",
+  "textures": {
+    "crown": "thelittlethings:hat/crown_ruby"
+  }
+}

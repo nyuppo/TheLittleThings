@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/cardboard_box_base",
+  "textures": {
+    "cardboard": "thelittlethings:hat/cardboard_box_tiny"
+  }
+}

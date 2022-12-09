@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thelittlethings:black_top_hats"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:black_top_hat_blue",
+    "count": 1
+  },
+  "group": "top_hat"
+}

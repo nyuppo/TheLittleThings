@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/generic_cube_hat",
+  "textures": {
+    "hat": "thelittlethings:hat/winter_hat"
+  }
+}

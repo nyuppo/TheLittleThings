@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " B ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:white_top_hat",
+    "count": 1
+  },
+  "group": "top_hat"
+}

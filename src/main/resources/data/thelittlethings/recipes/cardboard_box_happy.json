@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thelittlethings:cardboard_box"
+    },
+    {
+      "tag": "minecraft:flowers"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:cardboard_box_happy",
+    "count": 1
+  },
+  "group": "cardboard_box"
+}

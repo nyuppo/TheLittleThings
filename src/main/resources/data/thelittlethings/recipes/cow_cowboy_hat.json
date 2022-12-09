@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#H#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "H": {
+      "item": "thelittlethings:cowboy_hat"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:cow_cowboy_hat",
+    "count": 1
+  },
+  "group": "cowboy_hat"
+}

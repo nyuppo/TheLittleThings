@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N N",
+    "NHN"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:golden_helmet"
+    },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:gold_viking_hat",
+    "count": 1
+  },
+  "group": "viking_helmet"
+}

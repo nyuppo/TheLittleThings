@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:green_froggy_hat",
+    "count": 1
+  },
+  "group": "froggy_hat"
+}

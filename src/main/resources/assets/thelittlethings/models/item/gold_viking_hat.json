@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/viking_helmet",
+  "textures": {
+    "helmet": "thelittlethings:hat/viking_helmet_gold"
+  }
+}

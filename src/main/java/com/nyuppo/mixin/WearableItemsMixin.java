@@ -1,6 +1,8 @@
 package com.nyuppo.mixin;
 
 import com.nyuppo.block.ModAbstractSkullBlock;
+import com.nyuppo.item.HatItem;
+import com.nyuppo.util.tags.ModItemTags;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.BlockItem;
@@ -15,6 +17,8 @@ public class WearableItemsMixin {
     @Inject(method = "getPreferredEquipmentSlot(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/entity/EquipmentSlot;", at = @At("HEAD"), cancellable = true)
     private static void onGetPreferredEquipementSlot(ItemStack stack, CallbackInfoReturnable<EquipmentSlot> ci) {
         if (stack.getItem() instanceof BlockItem && ((BlockItem)stack.getItem()).getBlock() instanceof ModAbstractSkullBlock) {
+            ci.setReturnValue(EquipmentSlot.HEAD);
+        } else if (stack.isIn(ModItemTags.HATS) || stack.getItem() instanceof HatItem) {
             ci.setReturnValue(EquipmentSlot.HEAD);
         }
     }

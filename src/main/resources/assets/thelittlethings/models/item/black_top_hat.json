@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/top_hat_base",
+  "textures": {
+    "hat": "thelittlethings:hat/black_top_hat"
+  }
+}

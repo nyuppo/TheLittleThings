@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:red_witch_hat",
+    "count": 1
+  },
+  "group": "witch_hat"
+}

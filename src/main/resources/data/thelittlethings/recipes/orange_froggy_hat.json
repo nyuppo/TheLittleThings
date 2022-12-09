@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thelittlethings:froggy_hats"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:orange_froggy_hat",
+    "count": 1
+  },
+  "group": "froggy_hat"
+}

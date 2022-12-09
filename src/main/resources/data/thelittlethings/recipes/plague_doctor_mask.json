@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "M",
+    "N",
+    "N"
+  ],
+  "key": {
+    "M": {
+      "item": "thelittlethings:armorer_hat"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:plague_doctor_mask",
+    "count": 1
+  }
+}

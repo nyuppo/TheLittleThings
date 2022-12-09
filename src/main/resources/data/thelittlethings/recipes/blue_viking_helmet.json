@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thelittlethings:viking_helmets"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:blue_viking_hat",
+    "count": 1
+  },
+  "group": "viking_helmet"
+}

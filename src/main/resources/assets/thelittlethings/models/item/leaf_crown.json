@@ -1,0 +1,12 @@
+{
+  "parent": "thelittlethings:item/generic_cube_hat",
+  "textures": {
+    "hat": "thelittlethings:hat/leaf_crown"
+  },
+  "display": {
+    "head": {
+      "scale": [0.95, 0.95, 0.95],
+      "translation": [0, 1, 0]
+    }
+  }
+}

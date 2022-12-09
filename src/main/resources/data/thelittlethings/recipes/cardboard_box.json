@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:cardboard_box",
+    "count": 1
+  },
+  "group": "cardboard_box"
+}

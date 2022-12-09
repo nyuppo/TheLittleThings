@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thelittlethings:cardboard_box"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    }
+  ],
+  "result": {
+    "item": "thelittlethings:cardboard_box_surprised",
+    "count": 1
+  },
+  "group": "cardboard_box"
+}

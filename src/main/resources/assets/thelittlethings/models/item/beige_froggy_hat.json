@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/froggy_hat",
+  "textures": {
+    "hat": "thelittlethings:hat/beige_froggy_hat"
+  }
+}

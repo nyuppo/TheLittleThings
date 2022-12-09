@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/axolotl_hat_generic",
+  "textures": {
+    "hat": "thelittlethings:hat/hat_axolotl_purple"
+  }
+}

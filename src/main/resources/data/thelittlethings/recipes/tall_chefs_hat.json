@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " # ",
+    " H "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "H": {
+      "item": "thelittlethings:chefs_hat"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:tall_chefs_hat",
+    "count": 1
+  },
+  "group": "chefs_hat"
+}

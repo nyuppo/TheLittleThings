@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:winter_hat",
+    "count": 1
+  },
+  "group": "villager_hat"
+}
