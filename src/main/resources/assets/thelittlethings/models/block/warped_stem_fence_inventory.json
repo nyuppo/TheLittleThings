@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_inventory",
+    "textures": {
+        "log": "minecraft:block/warped_stem",
+        "top": "thelittlethings:block/warped_stem_fence_top"
+    }
+}

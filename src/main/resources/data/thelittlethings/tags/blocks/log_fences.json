@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:oak_log_fence",
+    "thelittlethings:birch_log_fence",
+    "thelittlethings:spruce_log_fence",
+    "thelittlethings:jungle_log_fence",
+    "thelittlethings:acacia_log_fence",
+    "thelittlethings:dark_oak_log_fence",
+    "thelittlethings:mangrove_log_fence",
+    "thelittlethings:crimson_stem_fence",
+    "thelittlethings:warped_stem_fence",
+    "thelittlethings:azalea_log_fence",
+    "thelittlethings:sakura_log_fence",
+    "thelittlethings:willow_log_fence",
+    "thelittlethings:baobab_log_fence"
+
+  ]
+}

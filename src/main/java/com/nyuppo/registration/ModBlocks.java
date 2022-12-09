@@ -177,6 +177,35 @@ public class ModBlocks {
     public static final Block WILLOW_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
     public static final Block BAOBAB_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
 
+    // Log Fences
+    public static final Block OAK_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block SPRUCE_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS));
+    public static final Block BIRCH_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS));
+    public static final Block JUNGLE_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS));
+    public static final Block ACACIA_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS));
+    public static final Block DARK_OAK_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS));
+    public static final Block MANGROVE_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS));
+    public static final Block CRIMSON_STEM_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS));
+    public static final Block WARPED_STEM_FENCE = new FenceBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS));
+    public static final Block AZALEA_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(ModBlocks.AZALEA_PLANKS));
+    public static final Block SAKURA_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(ModBlocks.SAKURA_PLANKS));
+    public static final Block WILLOW_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(ModBlocks.WILLOW_PLANKS));
+    public static final Block BAOBAB_LOG_FENCE = new FenceBlock(AbstractBlock.Settings.copy(ModBlocks.BAOBAB_PLANKS));
+
+    public static final Block OAK_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block SPRUCE_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS));
+    public static final Block BIRCH_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS));
+    public static final Block JUNGLE_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS));
+    public static final Block ACACIA_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS));
+    public static final Block DARK_OAK_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS));
+    public static final Block MANGROVE_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS));
+    public static final Block CRIMSON_STEM_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS));
+    public static final Block WARPED_STEM_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS));
+    public static final Block AZALEA_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(ModBlocks.AZALEA_PLANKS));
+    public static final Block SAKURA_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(ModBlocks.SAKURA_PLANKS));
+    public static final Block WILLOW_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(ModBlocks.WILLOW_PLANKS));
+    public static final Block BAOBAB_LOG_FENCE_GATE = new FenceGateBlock(AbstractBlock.Settings.copy(ModBlocks.BAOBAB_PLANKS));
+
     public static final Block CHISELED_BOOKSHELF = new ChiseledBookshelfBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.5F).sounds(ModBlockSoundGroup.CHISELED_BOOKSHELF));
 
     // Oriental
@@ -534,6 +563,55 @@ public class ModBlocks {
         register("willow_hedge", WILLOW_HEDGE);
         register("baobab_hedge", BAOBAB_HEDGE);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlockTags.HEDGES, 30, 60);
+
+        register("oak_log_fence", OAK_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(OAK_LOG_FENCE, 5, 20);
+        register("oak_log_fence_gate", OAK_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(OAK_LOG_FENCE_GATE, 5, 20);
+        register("birch_log_fence", BIRCH_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(BIRCH_LOG_FENCE, 5, 20);
+        register("birch_log_fence_gate", BIRCH_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(BIRCH_LOG_FENCE_GATE, 5, 20);
+        register("spruce_log_fence", SPRUCE_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(SPRUCE_LOG_FENCE, 5, 20);
+        register("spruce_log_fence_gate", SPRUCE_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(SPRUCE_LOG_FENCE_GATE, 5, 20);
+        register("jungle_log_fence", JUNGLE_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(JUNGLE_LOG_FENCE, 5, 20);
+        register("jungle_log_fence_gate", JUNGLE_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(JUNGLE_LOG_FENCE_GATE, 5, 20);
+        register("acacia_log_fence", ACACIA_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(ACACIA_LOG_FENCE, 5, 20);
+        register("acacia_log_fence_gate", ACACIA_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(ACACIA_LOG_FENCE_GATE, 5, 20);
+        register("dark_oak_log_fence", DARK_OAK_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(DARK_OAK_LOG_FENCE, 5, 20);
+        register("dark_oak_log_fence_gate", DARK_OAK_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(DARK_OAK_LOG_FENCE_GATE, 5, 20);
+        register("mangrove_log_fence", MANGROVE_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(MANGROVE_LOG_FENCE, 5, 20);
+        register("mangrove_log_fence_gate", MANGROVE_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(MANGROVE_LOG_FENCE_GATE, 5, 20);
+        register("crimson_stem_fence", CRIMSON_STEM_FENCE);
+        register("crimson_stem_fence_gate", CRIMSON_STEM_FENCE_GATE);
+        register("warped_stem_fence", WARPED_STEM_FENCE);
+        register("warped_stem_fence_gate", WARPED_STEM_FENCE_GATE);
+        register("azalea_log_fence", AZALEA_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(AZALEA_LOG_FENCE, 5, 20);
+        register("azalea_log_fence_gate", AZALEA_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(AZALEA_LOG_FENCE_GATE, 5, 20);
+        register("sakura_log_fence", SAKURA_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(SAKURA_LOG_FENCE, 5, 20);
+        register("sakura_log_fence_gate", SAKURA_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(SAKURA_LOG_FENCE_GATE, 5, 20);
+        register("willow_log_fence", WILLOW_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(WILLOW_LOG_FENCE, 5, 20);
+        register("willow_log_fence_gate", WILLOW_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(WILLOW_LOG_FENCE_GATE, 5, 20);
+        register("baobab_log_fence", BAOBAB_LOG_FENCE);
+        FlammableBlockRegistry.getDefaultInstance().add(BAOBAB_LOG_FENCE, 5, 20);
+        register("baobab_log_fence_gate", BAOBAB_LOG_FENCE_GATE);
+        FlammableBlockRegistry.getDefaultInstance().add(BAOBAB_LOG_FENCE_GATE, 5, 20);
 
         Registry.register(Registry.BLOCK, TheLittleThings.ID("chiseled_bookshelf"), CHISELED_BOOKSHELF);
 

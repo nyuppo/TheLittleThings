@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "pattern": [
+    "LSL",
+    "LSL"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "L": {
+      "item": "thelittlethings:willow_log"
+    }
+  },
+  "result": {
+    "item": "thelittlethings:willow_log_fence",
+    "count": 8
+  }
+}

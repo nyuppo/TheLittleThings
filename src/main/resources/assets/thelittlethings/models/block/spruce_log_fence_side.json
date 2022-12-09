@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_side",
+    "textures": {
+        "log": "minecraft:block/spruce_log",
+        "top": "thelittlethings:block/spruce_log_fence_top"
+    }
+}

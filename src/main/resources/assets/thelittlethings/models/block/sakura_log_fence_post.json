@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_post",
+    "textures": {
+        "log": "thelittlethings:block/sakura_log",
+        "top": "thelittlethings:block/sakura_log_fence_top"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_inventory",
+    "textures": {
+        "log": "minecraft:block/crimson_stem",
+        "top": "thelittlethings:block/crimson_stem_fence_top"
+    }
+}

@@ -185,6 +185,33 @@ public class ModItems {
         Registry.register(Registry.ITEM, TheLittleThings.ID("willow_trimmed_planks"), new BlockItem(ModBlocks.WILLOW_TRIMMED_PLANKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, TheLittleThings.ID("baobab_trimmed_planks"), new BlockItem(ModBlocks.BAOBAB_TRIMMED_PLANKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
+        register("oak_log_fence", ModBlocks.OAK_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("oak_log_fence_gate", ModBlocks.OAK_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("birch_log_fence", ModBlocks.BIRCH_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("birch_log_fence_gate", ModBlocks.BIRCH_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("spruce_log_fence", ModBlocks.SPRUCE_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("spruce_log_fence_gate", ModBlocks.SPRUCE_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("jungle_log_fence", ModBlocks.JUNGLE_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("jungle_log_fence_gate", ModBlocks.JUNGLE_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("acacia_log_fence", ModBlocks.ACACIA_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("acacia_log_fence_gate", ModBlocks.ACACIA_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("dark_oak_log_fence", ModBlocks.DARK_OAK_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("dark_oak_log_fence_gate", ModBlocks.DARK_OAK_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("mangrove_log_fence", ModBlocks.MANGROVE_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("mangrove_log_fence_gate", ModBlocks.MANGROVE_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("crimson_stem_fence", ModBlocks.CRIMSON_STEM_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("crimson_stem_fence_gate", ModBlocks.CRIMSON_STEM_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("warped_stem_fence", ModBlocks.WARPED_STEM_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("warped_stem_fence_gate", ModBlocks.WARPED_STEM_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("azalea_log_fence", ModBlocks.AZALEA_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("azalea_log_fence_gate", ModBlocks.AZALEA_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("sakura_log_fence", ModBlocks.SAKURA_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("sakura_log_fence_gate", ModBlocks.SAKURA_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("willow_log_fence", ModBlocks.WILLOW_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("willow_log_fence_gate", ModBlocks.WILLOW_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("baobab_log_fence", ModBlocks.BAOBAB_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("baobab_log_fence_gate", ModBlocks.BAOBAB_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
+
         Registry.register(Registry.ITEM, TheLittleThings.ID("chiseled_bookshelf"), new BlockItem(ModBlocks.CHISELED_BOOKSHELF, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
         // Paper Blocks

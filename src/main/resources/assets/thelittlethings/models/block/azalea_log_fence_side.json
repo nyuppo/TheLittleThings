@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_side",
+    "textures": {
+        "log": "thelittlethings:block/azalea_log",
+        "top": "thelittlethings:block/azalea_log_fence_top"
+    }
+}

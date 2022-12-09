@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_inventory",
+    "textures": {
+        "log": "thelittlethings:block/baobab_log",
+        "top": "thelittlethings:block/baobab_log_fence_top"
+    }
+}

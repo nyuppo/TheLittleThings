@@ -1,0 +1,7 @@
+{
+    "parent": "thelittlethings:block/log_fence_inventory",
+    "textures": {
+        "log": "minecraft:block/acacia_log",
+        "top": "thelittlethings:block/acacia_log_fence_top"
+    }
+}
