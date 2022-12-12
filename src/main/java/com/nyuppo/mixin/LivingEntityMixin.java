@@ -1,5 +1,6 @@
 package com.nyuppo.mixin;
 
+import com.nyuppo.TheLittleThings;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.ArmorStandEntity;
@@ -13,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 public class LivingEntityMixin {
     @Inject(method = "stopRiding()V", at = @At("TAIL"), locals = LocalCapture.CAPTURE_FAILEXCEPTION)
     public void onStopRiding(CallbackInfo ci, Entity entity) {
-        if (entity != null && entity instanceof ArmorStandEntity && entity.hasCustomName() && entity.getCustomName().getString() == "_seat") {
+        if (entity != null && entity instanceof ArmorStandEntity && entity.hasCustomName() && entity.getCustomName().getString().equals("_seat")) {
             entity.remove(Entity.RemovalReason.KILLED);
             ((LivingEntity)(Object)this).refreshPositionAfterTeleport(((LivingEntity)(Object)this).getPos().add(0.0D, 1.0D, 0.0D));
         }
