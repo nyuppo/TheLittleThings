@@ -3,6 +3,7 @@ package com.nyuppo.block;
 import com.nyuppo.TheLittleThings;
 import com.nyuppo.block.entity.ChiseledBookshelfBlockEntity;
 import com.nyuppo.registration.ModSoundEvents;
+import com.nyuppo.registration.ModStats;
 import com.nyuppo.util.tags.ModItemTags;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -73,6 +74,8 @@ public class ChiseledBookshelfBlock extends BlockWithEntity {
             } else if (world.isClient()) {
                 return ActionResult.SUCCESS;
             } else {
+                player.incrementStat(ModStats.INTERACT_CHISELED_BOOKSHELF);
+
                 int i = getSlotForHitPos((Vec2f)optional.get());
                 ItemStack itemStack = player.getStackInHand(hand);
                 return itemStack.isIn(ModItemTags.BOOKSHELF_BOOKS) ? tryAddBook(world, pos, player, chiseledBookshelfBlockEntity, itemStack, i) : tryRemoveBook(world, pos, player, chiseledBookshelfBlockEntity, i);

@@ -1,6 +1,7 @@
 package com.nyuppo.block;
 
 import com.nyuppo.block.entity.DisplayCaseBlockEntity;
+import com.nyuppo.registration.ModStats;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.CampfireBlockEntity;
@@ -59,7 +60,7 @@ public class DisplayCaseBlock extends BlockWithEntity implements Waterloggable {
                 }
 
                 if (!world.isClient && displayCaseBlockEntity.setItem(stack, !player.isCreative())) {
-                    // increment stat
+                    player.incrementStat(ModStats.INTERACT_DISPLAY_CASE);
                     world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.5f, 1.0f);
                     return ActionResult.SUCCESS;
                 }
