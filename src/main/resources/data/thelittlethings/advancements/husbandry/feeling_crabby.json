@@ -1,0 +1,35 @@
+{
+  "parent": "thelittlethings:husbandry/fish_out_of_water",
+  "display": {
+    "icon": {
+      "item": "thelittlethings:crab_claw"
+    },
+    "title": {
+      "translate": "advancements.husbandry.feeling_crabby.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.feeling_crabby.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "crab_spawn_egg": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:crab_spawn_egg"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crab_spawn_egg"
+    ]
+  ]
+}

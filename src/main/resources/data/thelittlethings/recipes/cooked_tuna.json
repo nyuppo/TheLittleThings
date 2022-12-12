@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "thelittlethings:tuna"
+  },
+  "result": "thelittlethings:cooked_tuna",
+  "experience": 0.35,
+  "cookingtime": 200
+}

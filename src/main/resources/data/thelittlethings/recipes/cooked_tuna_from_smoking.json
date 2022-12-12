@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "thelittlethings:tuna"
+  },
+  "result": "thelittlethings:cooked_tuna",
+  "experience": 0.35,
+  "cookingtime": 100
+}

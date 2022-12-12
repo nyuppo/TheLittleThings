@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "thelittlethings:roach"
+  },
+  "result": "thelittlethings:cooked_roach",
+  "experience": 0.35,
+  "cookingtime": 600
+}

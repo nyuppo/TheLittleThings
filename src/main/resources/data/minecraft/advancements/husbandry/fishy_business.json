@@ -1,0 +1,333 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "cod": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cod"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "pufferfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:pufferfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "salmon": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:salmon"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "tropical_fish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:tropical_fish"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "carp": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:carp"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "zander": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:zander"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "mackarel": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:mackarel"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "anchovy": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:anchovy"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "sardine": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:sardine"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "tuna": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:tuna"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "roach": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:roach"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "bream": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:bream"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "largemouth_bass": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:largemouth_bass"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "albacore": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:albacore"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "tilapia": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:tilapia"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "poinker": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:poinker"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "blowfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:blowfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "trevally": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:trevally"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "blue_betta": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:blue_betta"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "red_betta": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:red_betta"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "blobfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:blobfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "golden_devil": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:golden_devil"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "mini_squid": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:mini_squid"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "mini_glow_squid": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:mini_glow_squid"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "eel": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:eel"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "jellyfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:jellyfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "isosa": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:isosa"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "golden_cod": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelittlethings:golden_cod"
+          ]
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.husbandry.fishy_business.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:fishing_rod",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.husbandry.fishy_business.title"
+    }
+  },
+  "requirements": [
+    [
+      "cod",
+      "tropical_fish",
+      "pufferfish",
+      "salmon",
+      "carp",
+      "zander",
+      "mackarel",
+      "anchovy",
+      "sardine",
+      "tuna",
+      "roach",
+      "bream",
+      "largemouth_bass",
+      "albacore",
+      "tilapia",
+      "poinker",
+      "blowfish",
+      "trevally",
+      "blue_betta",
+      "red_betta",
+      "blobfish",
+      "golden_devil",
+      "mini_squid",
+      "mini_glow_squid",
+      "eel",
+      "jellyfish",
+      "isosa",
+      "golden_cod"
+    ]
+  ]
+}

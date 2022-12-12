@@ -1,0 +1,151 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 120
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 28
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:carp",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:zander",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:mackarel",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:anchovy",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:sardine",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:tuna",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:roach",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:bream",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:largemouth_bass",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:albacore",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:tilapia",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:poinker",
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:blowfish",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:trevally",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:blue_betta",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:red_betta",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:blobfish",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:golden_devil",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:mini_squid",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:mini_glow_squid",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:eel",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:jellyfish",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:isosa",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelittlethings:golden_cod",
+          "weight": 1
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

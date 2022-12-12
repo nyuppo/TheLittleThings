@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "thelittlethings:sardine"
+  },
+  "result": "thelittlethings:cooked_sardine",
+  "experience": 0.35,
+  "cookingtime": 100
+}

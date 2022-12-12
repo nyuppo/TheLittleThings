@@ -58,6 +58,23 @@ public class ModItems {
     public static final Item GOLDEN_WILD_FLOWER;
     public static final Item WILD_WEEDS;
 
+    public static final Item CARP;
+    public static final Item ZANDER;
+    public static final Item MACKAREL;
+    public static final Item ANCHOVY;
+    public static final Item SARDINE;
+    public static final Item TUNA;
+    public static final Item ROACH;
+    public static final Item BREAM;
+    public static final Item LARGEMOUTH_BASS;
+    public static final Item TILAPIA;
+    public static final Item ALBACORE;
+    public static final Item POINKER;
+    public static final Item BLOWFISH;
+    public static final Item TREVALLY;
+    public static final Item BLUE_BETTA;
+    public static final Item RED_BETTA;
+
     public static void registerItems() {
         // Bamboo Wood
         Registry.register(Registry.ITEM, TheLittleThings.ID("bamboo_planks"), new BlockItem(ModBlocks.BAMBOO_PLANKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
@@ -266,6 +283,25 @@ public class ModItems {
         register("display_case", ModBlocks.DISPLAY_CASE, new Item.Settings().group(ItemGroup.DECORATIONS));
         register("glass_display_case", ModBlocks.GLASS_DISPLAY_CASE, new Item.Settings().group(ItemGroup.DECORATIONS));
 
+        registerFish("cooked_carp", true);
+        registerFish("cooked_zander", true);
+        registerFish("cooked_mackarel", true);
+        registerFish("cooked_anchovy", true);
+        registerFish("cooked_sardine", true);
+        registerFish("cooked_tuna", true);
+        registerFish("cooked_roach", true);
+        registerFish("cooked_bream", true);
+
+        registerFish("blobfish", 1, 0.1f);
+        register("golden_devil", new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(4).saturationModifier(0.1f).statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0), 0.7f).build())));
+        registerFish("mini_squid", 1, 0.1f);
+        registerFish("mini_glow_squid", 1, 0.1f);
+        registerFish("calamari", 5, 0.6f);
+        registerFish("eel", 1, 0.1f);
+        register("jellyfish", new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 600, 0), 0.7f).build())));
+        register("isosa", new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0), 0.6f).build())));
+        registerFish("golden_cod", 6, 1.2f);
+
         BoatItems.registerBoats();
     }
 
@@ -279,6 +315,14 @@ public class ModItems {
 
     private static Item registerWildFlower(String id, Block entry) {
         return register(id, new BlockItem(entry, new Item.Settings().group(ItemGroup.DECORATIONS)));
+    }
+
+    private static Item registerFish(String id, boolean cooked) {
+        return register(id, new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(cooked ? 5 : 2).saturationModifier(cooked ? 0.6f : 0.1f).build())));
+    }
+
+    private static Item registerFish(String id, int hunger, float saturation) {
+        return register(id, new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build())));
     }
 
     static {
@@ -347,5 +391,23 @@ public class ModItems {
         CompostingChanceRegistry.INSTANCE.add(GOLDEN_WILD_FLOWER, 0.65F);
         WILD_WEEDS = registerWildFlower("wild_weeds", ModBlocks.WILD_WEEDS);
         CompostingChanceRegistry.INSTANCE.add(WILD_WEEDS, 0.65F);
+
+        CARP = registerFish("carp", false);
+        ZANDER = registerFish("zander", false);
+        MACKAREL = registerFish("mackarel", false);
+        ANCHOVY = registerFish("anchovy", false);
+        SARDINE = registerFish("sardine", false);
+        TUNA = registerFish("tuna", false);
+        ROACH = registerFish("roach", false);
+        BREAM = registerFish("bream", false);
+
+        LARGEMOUTH_BASS = registerFish("largemouth_bass", 3, 0.2f);
+        ALBACORE = registerFish("albacore", 3, 0.2f);
+        TILAPIA = registerFish("tilapia", 3, 0.4f);
+        POINKER = registerFish("poinker", 2, 0.1f);
+        BLOWFISH = register("blowfish", new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 0), 0.3f).build())));
+        TREVALLY = registerFish("trevally", 3, 0.3f);
+        BLUE_BETTA = registerFish("blue_betta", 2, 0.1f);
+        RED_BETTA = registerFish("red_betta", 2, 0.1f);
     }
 }

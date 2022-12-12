@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "thelittlethings:mackarel"
+  },
+  "result": "thelittlethings:cooked_mackarel",
+  "experience": 0.35,
+  "cookingtime": 100
+}

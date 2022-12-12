@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "thelittlethings:anchovy"
+  },
+  "result": "thelittlethings:cooked_anchovy",
+  "experience": 0.35,
+  "cookingtime": 100
+}

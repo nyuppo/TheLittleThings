@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "thelittlethings:mini_glow_squid"
+  },
+  "result": "thelittlethings:calamari",
+  "experience": 0.35,
+  "cookingtime": 100
+}

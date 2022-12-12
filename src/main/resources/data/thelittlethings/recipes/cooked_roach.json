@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "thelittlethings:roach"
+  },
+  "result": "thelittlethings:cooked_roach",
+  "experience": 0.35,
+  "cookingtime": 200
+}

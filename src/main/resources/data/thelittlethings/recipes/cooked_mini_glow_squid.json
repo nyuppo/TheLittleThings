@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "thelittlethings:mini_glow_squid"
+  },
+  "result": "thelittlethings:calamari",
+  "experience": 0.35,
+  "cookingtime": 200
+}

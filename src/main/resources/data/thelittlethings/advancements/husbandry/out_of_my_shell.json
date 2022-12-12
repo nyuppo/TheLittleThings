@@ -1,0 +1,35 @@
+{
+  "parent": "thelittlethings:husbandry/fish_out_of_water",
+  "display": {
+    "icon": {
+      "item": "minecraft:scute"
+    },
+    "title": {
+      "translate": "advancements.husbandry.out_of_my_shell.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.out_of_my_shell.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "turtle_spawn_egg": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:turtle_spawn_egg"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "turtle_spawn_egg"
+    ]
+  ]
+}

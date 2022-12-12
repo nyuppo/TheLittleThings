@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "thelittlethings:bream"
+  },
+  "result": "thelittlethings:cooked_bream",
+  "experience": 0.35,
+  "cookingtime": 200
+}

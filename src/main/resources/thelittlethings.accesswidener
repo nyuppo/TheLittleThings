@@ -2,3 +2,5 @@ accessWidener	v1	 named
 extendable    method    net/minecraft/block/AbstractBlock    getLootTableId    ()Lnet/minecraft/util/Identifier;
 extendable    method    net/minecraft/block/DoorBlock    playOpenCloseSound    (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Z)V
 accessible    field    net/minecraft/client/render/block/entity/SignBlockEntityRenderer    textRenderer    Lnet/minecraft/client/font/TextRenderer;
+accessible    class    net/minecraft/entity/passive/CatEntity$TemptGoal
+accessible    class    net/minecraft/entity/passive/OcelotEntity$OcelotTemptGoal

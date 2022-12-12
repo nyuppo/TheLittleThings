@@ -51,6 +51,7 @@ public class TheLittleThings implements ModInitializer {
         ModWorldGen.init();
         ModBiomes.registerBiomes();
         SwapAzaleaWood.swapAzaleaWood();
+        ModStats.registerStats();
 
         FallibleItemDispenserBehavior dispenserBehavior2 = new FallibleItemDispenserBehavior(){
             @Override
