@@ -1,11 +1,20 @@
 package com.nyuppo.block.entity;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.nyuppo.network.TheLittleThingsNetworkingConstants;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.item.DyeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.server.command.CommandOutput;
@@ -182,6 +191,23 @@ public class HangingSignBlockEntity extends BlockEntity {
     }
 
     public boolean onActivate(ServerPlayerEntity player) {
+        ItemStack itemStack = player.getActiveItem();
+        Item item = itemStack.getItem();
+
+        boolean isDye = item instanceof DyeItem;
+        boolean isGlowInkSack = itemStack.isOf(Items.GLOW_INK_SAC);
+        boolean isInkSack = itemStack.isOf(Items.INK_SAC);
+
+        if (!(isDye || isGlowInkSack || isInkSack)){
+            if (player.isSneaking() && player.getAbilities().allowModifyWorld) {
+                this.setEditable(true);
+
+                PacketByteBuf buf = PacketByteBufs.create();
+                buf.writeBlockPos(this.getPos());
+                ServerPlayNetworking.send(player, TheLittleThingsNetworkingConstants.getHangingSignScreenPacketId(), buf);
+            }
+        }
+
         Text[] var2 = this.getTexts(player.shouldFilterText());
         int var3 = var2.length;
 
