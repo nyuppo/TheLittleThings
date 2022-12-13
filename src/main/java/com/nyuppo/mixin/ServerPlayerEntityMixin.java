@@ -4,6 +4,7 @@ import com.mojang.authlib.GameProfile;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,7 +21,7 @@ public abstract class ServerPlayerEntityMixin {
     public void onSleep(BlockPos pos, CallbackInfo info) {
         ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)((PlayerEntity)(Object)this);
         if (!serverPlayerEntity.getWorld().isDay()) {
-            serverPlayerEntity.getWorld().getServer().getPlayerManager().broadcast(Text.literal(serverPlayerEntity.getDisplayName().getString() + " went to bed. Sweet dreams."), false);
+            serverPlayerEntity.getWorld().getServer().getPlayerManager().broadcast(Text.literal(serverPlayerEntity.getDisplayName().getString()).append(Text.literal(" went to bed. Sweet dreams.").formatted(Formatting.YELLOW)), false);
         }
     }
 
