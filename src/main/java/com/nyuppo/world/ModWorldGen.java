@@ -28,6 +28,7 @@ public class ModWorldGen {
         modifySwamp();
         addFairyRings();
         addWildFlowers();
+        addFlowers();
     }
 
     private static void addSakuraTrees() {
@@ -81,9 +82,45 @@ public class ModWorldGen {
     }
 
     private static void addFairyRings() {
-        BiomeModifications.create(TheLittleThings.ID("fairy_rigs"))
+        BiomeModifications.create(TheLittleThings.ID("fairy_rings"))
                 .add(ModificationPhase.ADDITIONS, FAIRY_RING_BIOMES, (c) -> {
                     c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FAIRY_RING_PLACED.getKey().get());
+                });
+    }
+
+    private static void addFlowers() {
+        BiomeModifications.create(TheLittleThings.ID("carnations"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, ModBiomes.SAKURA_FOREST), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_PINK_CARNATION_PLACED.getKey().get());
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_RED_CARNATION_PLACED.getKey().get());
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_WHITE_CARNATION_PLACED.getKey().get());
+                });
+
+        BiomeModifications.create(TheLittleThings.ID("crocus"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_HILLS, BiomeKeys.WINDSWEPT_FOREST), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_CROCUS_PLACED.getKey().get());
+                });
+
+        BiomeModifications.create(TheLittleThings.ID("heliconia"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE, BiomeKeys.BAMBOO_JUNGLE), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_HELICONIA_PLACED.getKey().get());
+                });
+
+        /*
+        BiomeModifications.create(TheLittleThings.ID("yucca"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(ModBiomes.ARID_DUNES), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_YUCCA_PLACED.getKey().get());
+                });
+        */
+
+        BiomeModifications.create(TheLittleThings.ID("crillea"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.SNOWY_PLAINS, BiomeKeys.SNOWY_TAIGA), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_CRILLEA_PLACED.getKey().get());
+                });
+
+        BiomeModifications.create(TheLittleThings.ID("eko"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST), (c) -> {
+                    c.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_EKO_PLACED.getKey().get());
                 });
     }
 

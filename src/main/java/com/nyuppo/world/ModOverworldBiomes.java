@@ -96,6 +96,7 @@ public class ModOverworldBiomes {
         DefaultBiomeFeatures.addDefaultFlowers(builder2);
         DefaultBiomeFeatures.addDefaultGrass(builder2);
         DefaultBiomeFeatures.addDesertDeadBushes(builder2);
+        ModBiomeFeatures.addYuccaFlowers(builder2);
         DefaultBiomeFeatures.addDefaultMushrooms(builder2);
         DefaultBiomeFeatures.addDesertVegetation(builder2);
         DefaultBiomeFeatures.addDesertFeatures(builder2);

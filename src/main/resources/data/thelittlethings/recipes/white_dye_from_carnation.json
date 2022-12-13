@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thelittlethings:white_carnation"
+    }
+  ],
+  "result": {
+    "item": "minecraft:white_dye"
+  }
+}

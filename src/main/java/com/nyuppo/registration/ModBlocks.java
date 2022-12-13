@@ -343,6 +343,24 @@ public class ModBlocks {
     public static final Block DISPLAY_CASE = new DisplayCaseBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.0F).sounds(BlockSoundGroup.WOOD));
     public static final Block GLASS_DISPLAY_CASE = new GlassDisplayCaseBlock(AbstractBlock.Settings.of(Material.WOOD).strength(1.0F).sounds(BlockSoundGroup.WOOD));
 
+    // Flowers
+    public static final Block PINK_CARNATION = new FlowerBlock(StatusEffects.REGENERATION, 5, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block RED_CARNATION = new FlowerBlock(StatusEffects.SATURATION, 5, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block WHITE_CARNATION = new FlowerBlock(StatusEffects.INSTANT_HEALTH, 5, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block CROCUS = new FlowerBlock(StatusEffects.SPEED, 5, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block HELICONIA = new FlowerBlock(StatusEffects.NIGHT_VISION, 7, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block YUCCA = new SandFlowerBlock(StatusEffects.FIRE_RESISTANCE, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block CRILLEA = new FlowerBlock(StatusEffects.SLOW_FALLING, 8, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block EKO = new FlowerBlock(StatusEffects.SLOWNESS, 6, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+    public static final Block POTTED_PINK_CARNATION = new FlowerPotBlock(PINK_CARNATION, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_RED_CARNATION = new FlowerPotBlock(RED_CARNATION, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_WHITE_CARNATION = new FlowerPotBlock(WHITE_CARNATION, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_CROCUS = new FlowerPotBlock(CROCUS, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_HELICONIA = new FlowerPotBlock(HELICONIA, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_YUCCA = new FlowerPotBlock(YUCCA, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_CRILLEA = new FlowerPotBlock(CRILLEA, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+    public static final Block POTTED_EKO = new FlowerPotBlock(EKO, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+
     public static void registerBlocks() {
         // Bamboo Wood
         Registry.register(Registry.BLOCK, TheLittleThings.ID("bamboo_block"), BAMBOO_BLOCK);
@@ -714,6 +732,23 @@ public class ModBlocks {
 
         register("display_case", DISPLAY_CASE);
         register("glass_display_case", GLASS_DISPLAY_CASE);
+
+        register("pink_carnation", PINK_CARNATION);
+        register("red_carnation", RED_CARNATION);
+        register("white_carnation", WHITE_CARNATION);
+        register("crocus", CROCUS);
+        register("heliconia", HELICONIA);
+        register("yucca", YUCCA);
+        register("crillea", CRILLEA);
+        register("eko", EKO);
+        register("potted_pink_carnation", POTTED_PINK_CARNATION);
+        register("potted_red_carnation", POTTED_RED_CARNATION);
+        register("potted_white_carnation", POTTED_WHITE_CARNATION);
+        register("potted_crocus", POTTED_CROCUS);
+        register("potted_heliconia", POTTED_HELICONIA);
+        register("potted_yucca", POTTED_YUCCA);
+        register("potted_crillea", POTTED_CRILLEA);
+        register("potted_eko", POTTED_EKO);
     }
 
     private static Block register(String id, Block entry) {

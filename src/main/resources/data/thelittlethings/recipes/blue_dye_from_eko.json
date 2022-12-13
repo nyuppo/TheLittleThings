@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thelittlethings:eko"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_dye"
+  }
+}

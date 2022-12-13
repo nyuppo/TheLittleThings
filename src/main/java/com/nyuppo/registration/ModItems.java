@@ -302,6 +302,15 @@ public class ModItems {
         register("isosa", new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0), 0.6f).build())));
         registerFish("golden_cod", 6, 1.2f);
 
+        registerFlower("pink_carnation", ModBlocks.PINK_CARNATION);
+        registerFlower("red_carnation", ModBlocks.RED_CARNATION);
+        registerFlower("white_carnation", ModBlocks.WHITE_CARNATION);
+        registerFlower("crocus", ModBlocks.CROCUS);
+        registerFlower("heliconia", ModBlocks.HELICONIA);
+        registerFlower("yucca", ModBlocks.YUCCA);
+        registerFlower("crillea", ModBlocks.CRILLEA);
+        registerFlower("eko", ModBlocks.EKO);
+
         BoatItems.registerBoats();
     }
 
@@ -314,6 +323,10 @@ public class ModItems {
     }
 
     private static Item registerWildFlower(String id, Block entry) {
+        return register(id, new BlockItem(entry, new Item.Settings().group(ItemGroup.DECORATIONS)));
+    }
+
+    private static Item registerFlower(String id, Block entry) {
         return register(id, new BlockItem(entry, new Item.Settings().group(ItemGroup.DECORATIONS)));
     }
 

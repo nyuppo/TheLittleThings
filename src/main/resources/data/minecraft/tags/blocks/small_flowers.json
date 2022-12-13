@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "#thelittlethings:wild_flowers"
+    "#thelittlethings:wild_flowers",
+    "thelittlethings:pink_carnation",
+    "thelittlethings:red_carnation",
+    "thelittlethings:white_carnation",
+    "thelittlethings:crocus",
+    "thelittlethings:heliconia",
+    "thelittlethings:yucca",
+    "thelittlethings:crillea",
+    "thelittlethings:eko"
   ]
 }

@@ -28,4 +28,8 @@ public class ModBiomeFeatures {
     public static void addBaobabTrees(GenerationSettings.Builder builder) {
         builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.BAOBAB_TREES_PLACED);
     }
+
+    public static void addYuccaFlowers(GenerationSettings.Builder builder) {
+        builder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModFeatures.FLOWER_YUCCA_PLACED);
+    }
 }

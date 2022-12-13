@@ -15,9 +15,11 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
 import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.dynamic.Range;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
@@ -28,6 +30,7 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.DualNoiseBlockStateProvider;
 import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.LeavesVineTreeDecorator;
@@ -95,6 +98,23 @@ public class ModFeatures {
     public static final Feature<DefaultFeatureConfig> FAIRY_RING;
     public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> FAIRY_RING_CONFIGURED;
     public static final RegistryEntry<PlacedFeature> FAIRY_RING_PLACED;
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_PINK_CARNATION;
+    public static final RegistryEntry<PlacedFeature> FLOWER_PINK_CARNATION_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_RED_CARNATION;
+    public static final RegistryEntry<PlacedFeature> FLOWER_RED_CARNATION_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_WHITE_CARNATION;
+    public static final RegistryEntry<PlacedFeature> FLOWER_WHITE_CARNATION_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_CROCUS;
+    public static final RegistryEntry<PlacedFeature> FLOWER_CROCUS_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_HELICONIA;
+    public static final RegistryEntry<PlacedFeature> FLOWER_HELICONIA_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_YUCCA;
+    public static final RegistryEntry<PlacedFeature> FLOWER_YUCCA_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_CRILLEA;
+    public static final RegistryEntry<PlacedFeature> FLOWER_CRILLEA_PLACED;
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER_EKO;
+    public static final RegistryEntry<PlacedFeature> FLOWER_EKO_PLACED;
 
     public static <FC extends FeatureConfig, F extends Feature<FC>> RegistryEntry<ConfiguredFeature<?, ?>> register(String id, F feature, FC config) {
         return BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, TheLittleThings.ID(id), new ConfiguredFeature<FC, F>(feature, config));
@@ -165,17 +185,42 @@ public class ModFeatures {
                 new Pair<>(ModBlocks.LIGHT_BLUE_WILD_FLOWER, 10.0D)
         )), 8, 0.2d));
         TALL_BIRCH_WILD_FLOWERS_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("tall_birch_wild_flowers"), TALL_BIRCH_WILD_FLOWERS, FeatureConfig.DEFAULT);
-        TALL_BIRCH_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("tall_birch_wild_flowers"), TALL_BIRCH_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+        TALL_BIRCH_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("tall_birch_wild_flowers"), TALL_BIRCH_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(24), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
         DARK_OAK_WILD_FLOWERS = register("dark_oak_wild_flowers", new WildFlowerFeature(DefaultFeatureConfig.CODEC, new WeightedRandomBag<>(Arrays.asList(
                 new Pair<>(ModBlocks.RED_WILD_FLOWER, 50.0D),
                 new Pair<>(ModBlocks.YELLOW_WILD_FLOWER, 45.0D),
                 new Pair<>(ModBlocks.MAGENTA_WILD_FLOWER, 5.0D)
         )), 8, 0.2d));
         DARK_OAK_WILD_FLOWERS_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS, FeatureConfig.DEFAULT);
-        DARK_OAK_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(16), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+        DARK_OAK_WILD_FLOWERS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("dark_oak_wild_flowers"), DARK_OAK_WILD_FLOWERS_CONFIGURED, List.of(RarityFilterPlacementModifier.of(24), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
 
         FAIRY_RING = register("fairy_ring", new FairyRingFeature(DefaultFeatureConfig.CODEC));
         FAIRY_RING_CONFIGURED = ConfiguredFeatures.register(TheLittleThings.asStringID("fairy_ring"), FAIRY_RING, FeatureConfig.DEFAULT);
         FAIRY_RING_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("fairy_ring"), FAIRY_RING_CONFIGURED, List.of(RarityFilterPlacementModifier.of(200), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()));
+
+        //FLOWER_CARNATION = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_carnations"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(new DualNoiseBlockStateProvider(new Range<Integer>(1, 3), new DoublePerlinNoiseSampler.NoiseParameters(-10, 1.0, new double[0]), 1.0f, 2345L, new DoublePerlinNoiseSampler.NoiseParameters(-3, 1.0, new double[0]), 1.0f, List.of(ModBlocks.PINK_CARNATION.getDefaultState(), ModBlocks.RED_CARNATION.getDefaultState(), ModBlocks.WHITE_CARNATION.getDefaultState()))))));
+        //FLOWER_CARNATION_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_carnations"), FLOWER_CARNATION, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_PINK_CARNATION = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_pink_carnation"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_CARNATION)))));
+        FLOWER_PINK_CARNATION_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_pink_carnation"), FLOWER_PINK_CARNATION, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        FLOWER_RED_CARNATION = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_red_carnation"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.RED_CARNATION)))));
+        FLOWER_RED_CARNATION_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_red_carnation"), FLOWER_RED_CARNATION, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        FLOWER_WHITE_CARNATION = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_white_carnation"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.WHITE_CARNATION)))));
+        FLOWER_WHITE_CARNATION_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_white_carnation"), FLOWER_WHITE_CARNATION, RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_CROCUS = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_crocus"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CROCUS)))));
+        FLOWER_CROCUS_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_crocus"), FLOWER_CROCUS, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_HELICONIA = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_heliconia"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HELICONIA)))));
+        FLOWER_HELICONIA_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_heliconia"), FLOWER_HELICONIA, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_YUCCA = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_yucca"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.YUCCA)))));
+        FLOWER_YUCCA_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_yucca"), FLOWER_YUCCA, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_CRILLEA = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_crillea"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CRILLEA)))));
+        FLOWER_CRILLEA_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_crillea"), FLOWER_CRILLEA, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        FLOWER_EKO = ConfiguredFeatures.register(TheLittleThings.asStringID("flower_eko"), Feature.FLOWER, new RandomPatchFeatureConfig(64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.EKO)))));
+        FLOWER_EKO_PLACED = PlacedFeatures.register(TheLittleThings.asStringID("flower_eko"), FLOWER_EKO, RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 }
