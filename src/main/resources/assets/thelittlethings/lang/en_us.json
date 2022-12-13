@@ -263,6 +263,15 @@
   "subtitles.wild_flower.germinate": "Wild flower germinates",
   "subtitles.wild_flower.bloom": "Wild flower blooms",
 
+  "block.thelittlethings.pink_carnation": "Pink Carnation",
+  "block.thelittlethings.red_carnation": "Red Carnation",
+  "block.thelittlethings.white_carnation": "White Carnation",
+  "block.thelittlethings.crocus": "Crocus",
+  "block.thelittlethings.heliconia": "Heliconia",
+  "block.thelittlethings.yucca": "Yucca",
+  "block.thelittlethings.crillea": "Crillea",
+  "block.thelittlethings.eko": "Eko",
+
   "block.thelittlethings.display_case": "Display Case",
   "block.thelittlethings.glass_display_case": "Glass Display Case",
 
