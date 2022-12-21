@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:winter",
+    "thelittlethings:box",
+    "thelittlethings:stool",
+    "thelittlethings:interference",
+    "thelittlethings:amulet",
+    "thelittlethings:tim",
+    "thelittlethings:zoyok",
+
+    "thelittlethings:bush",
+    "thelittlethings:caustic",
+    "thelittlethings:dandy",
+    "thelittlethings:entrance",
+    "thelittlethings:matata",
+    "thelittlethings:sunset",
+    "thelittlethings:valley",
+    "thelittlethings:daybreak",
+    "thelittlethings:decay",
+    "thelittlethings:eruption",
+    "thelittlethings:polar",
+    "thelittlethings:rising"
+  ]
+}
