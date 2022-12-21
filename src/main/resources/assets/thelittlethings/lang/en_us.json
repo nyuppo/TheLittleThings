@@ -414,5 +414,11 @@
   "advancements.husbandry.feeling_crabby.description": "Pull a crab out of the water",
 
   "stat.thelittlethings.interact_display_case": "Items Displayed",
-  "stat.thelittlethings.interact_chiseled_bookshelf": "Books Moved"
+  "stat.thelittlethings.interact_chiseled_bookshelf": "Books Moved",
+
+  "block.thelittlethings.iron_chime": "Iron Wind Chime",
+  "block.thelittlethings.bamboo_chime": "Bamboo Wind Chime",
+  "block.thelittlethings.copper_chime": "Copper Wind Chime",
+  "block.thelittlethings.amethyst_chime": "Amethyst Wind Chime",
+  "subtitles.block.thelittlethings.chime": "Wind Chime chimes"
 }

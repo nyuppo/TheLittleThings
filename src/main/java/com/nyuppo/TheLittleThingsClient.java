@@ -6,6 +6,7 @@ import com.nyuppo.client.gui.HangingSignEditScreen;
 import com.nyuppo.client.render.block.DisplayCaseBlockRenderer;
 import com.nyuppo.client.render.block.HangingSignBlockEntityRenderer;
 import com.nyuppo.client.render.block.ModSkullBlockEntityRenderer;
+import com.nyuppo.client.render.block.WindchimeBlockEntityRenderer;
 import com.nyuppo.client.render.entity.CamelEntityRenderer;
 import com.nyuppo.client.render.entity.ModEntityModelLayers;
 import com.nyuppo.client.render.entity.RaftEntityRenderer;
@@ -100,6 +101,8 @@ public class TheLittleThingsClient implements ClientModInitializer {
             return FoliageColors.getDefaultColor();
         }, ModItems.WILLOW_LEAVES, ModItems.BAOBAB_LEAVES,
                 ModItems.OAK_HEDGE, ModItems.BIRCH_HEDGE, ModItems.SPRUCE_HEDGE, ModItems.JUNGLE_HEDGE, ModItems.ACACIA_HEDGE, ModItems.DARK_OAK_HEDGE, ModItems.MANGROVE_HEDGE, ModItems.WILLOW_HEDGE, ModItems.BAOBAB_HEDGE);
+
+        BlockEntityRendererRegistry.register(ModBlockEntityType.CHIME_BLOCK_ENTITY, WindchimeBlockEntityRenderer::new);
 
         ClientPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getHangingSignScreenPacketId(), (client, handler, buf, responseSender) -> {
             BlockPos pos = buf.readBlockPos();

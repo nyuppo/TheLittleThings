@@ -636,5 +636,59 @@
     "sounds": [
       "thelittlethings:mob/crab/crab_damage"
     ]
+  },
+  "chime.iron.loud": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/iron_loud1",
+      "thelittlethings:block/chime/iron_loud2",
+      "thelittlethings:block/chime/iron_loud3"
+    ]
+  },
+  "chime.iron.quiet": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/iron_quiet1",
+      "thelittlethings:block/chime/iron_quiet2",
+      "thelittlethings:block/chime/iron_quiet3",
+      "thelittlethings:block/chime/iron_quiet4",
+      "thelittlethings:block/chime/iron_quiet5"
+    ]
+  },
+  "chime.bamboo.loud": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/bamboo_loud1",
+      "thelittlethings:block/chime/bamboo_loud2",
+      "thelittlethings:block/chime/bamboo_loud3"
+    ]
+  },
+  "chime.bamboo.quiet": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/bamboo_quiet1",
+      "thelittlethings:block/chime/bamboo_quiet2",
+      "thelittlethings:block/chime/bamboo_quiet3",
+      "thelittlethings:block/chime/bamboo_quiet4"
+    ]
+  },
+  "chime.copper.loud": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/copper_loud1",
+      "thelittlethings:block/chime/copper_loud2",
+      "thelittlethings:block/chime/copper_loud3",
+      "thelittlethings:block/chime/copper_loud4"
+    ]
+  },
+  "chime.copper.quiet": {
+    "subtitle": "subtitles.block.thelittlethings.chime",
+    "sounds": [
+      "thelittlethings:block/chime/copper_quiet1",
+      "thelittlethings:block/chime/copper_quiet2",
+      "thelittlethings:block/chime/copper_quiet3",
+      "thelittlethings:block/chime/copper_quiet4",
+      "thelittlethings:block/chime/copper_quiet5"
+    ]
   }
 }

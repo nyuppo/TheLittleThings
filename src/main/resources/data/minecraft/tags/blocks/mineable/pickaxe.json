@@ -1,5 +1,8 @@
 {
   "values": [
-    "#thelittlethings:dunestone_blocks"
+    "#thelittlethings:dunestone_blocks",
+    "thelittlethings:iron_chime",
+    "thelittlethings:copper_chime",
+    "thelittlethings:amethyst_chime"
   ]
 }

@@ -2,12 +2,14 @@ package com.nyuppo.registration;
 
 import com.nyuppo.TheLittleThings;
 import com.nyuppo.block.*;
+import com.nyuppo.block.chime.ChimeType;
 import com.nyuppo.block.enums.WildFlowerColour;
 import com.nyuppo.mixin.SignTypeAccessor;
 import com.nyuppo.util.tags.ModBlockTags;
 import com.nyuppo.world.feature.tree.BaobabSaplingGenerator;
 import com.nyuppo.world.feature.tree.SakuraSaplingGenerator;
 import com.nyuppo.world.feature.tree.WillowSaplingGenerator;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
@@ -360,6 +362,24 @@ public class ModBlocks {
     public static final Block POTTED_YUCCA = new FlowerPotBlock(YUCCA, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
     public static final Block POTTED_CRILLEA = new FlowerPotBlock(CRILLEA, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
     public static final Block POTTED_EKO = new FlowerPotBlock(EKO, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque());
+
+    // Chimes
+    public static final Identifier IRON_CHIME_ID = new Identifier(MOD_ID, "iron_chime");
+    public static final WindchimeBlock IRON_CHIME = new WindchimeBlock(
+            ChimeType.IRON, ChimeType.settingsWith(Material.METAL).sounds(BlockSoundGroup.METAL));
+
+    public static final Identifier BAMBOO_CHIME_ID = new Identifier(MOD_ID, "bamboo_chime");
+    public static final WindchimeBlock BAMBOO_CHIME = new WindchimeBlock(
+            ChimeType.BAMBOO, ChimeType.settingsWith(Material.BAMBOO).sounds(BlockSoundGroup.BAMBOO));
+
+    public static final Identifier COPPER_CHIME_ID = new Identifier(MOD_ID, "copper_chime");
+    public static final WindchimeBlock COPPER_CHIME = new WindchimeBlock(
+            ChimeType.COPPER, ChimeType.settingsWith(Material.METAL).sounds(BlockSoundGroup.COPPER));
+
+    public static final Identifier AMETHYST_CHIME_ID = new Identifier(MOD_ID, "amethyst_chime");
+    public static final WindchimeBlock AMETHYST_CHIME = new WindchimeBlock(
+            ChimeType.AMETHYST, ChimeType.settingsWith(Material.AMETHYST).sounds(BlockSoundGroup.AMETHYST_BLOCK));
+
 
     public static void registerBlocks() {
         // Bamboo Wood
@@ -749,6 +769,17 @@ public class ModBlocks {
         register("potted_yucca", POTTED_YUCCA);
         register("potted_crillea", POTTED_CRILLEA);
         register("potted_eko", POTTED_EKO);
+
+        Registry.register(Registry.BLOCK, IRON_CHIME_ID, IRON_CHIME);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.IRON_LOUD_SOUND_ID, ChimeType.IRON_LOUD_SOUND);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.IRON_QUIET_SOUND_ID, ChimeType.IRON_QUIET_SOUND);
+        Registry.register(Registry.BLOCK, BAMBOO_CHIME_ID, BAMBOO_CHIME);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.BAMBOO_LOUD_SOUND_ID, ChimeType.BAMBOO_LOUD_SOUND);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.BAMBOO_QUIET_SOUND_ID, ChimeType.BAMBOO_QUIET_SOUND);
+        Registry.register(Registry.BLOCK, COPPER_CHIME_ID, COPPER_CHIME);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.COPPER_LOUD_SOUND_ID, ChimeType.COPPER_LOUD_SOUND);
+        Registry.register(Registry.SOUND_EVENT, ChimeType.COPPER_QUIET_SOUND_ID, ChimeType.COPPER_QUIET_SOUND);
+        Registry.register(Registry.BLOCK, AMETHYST_CHIME_ID, AMETHYST_CHIME);
     }
 
     private static Block register(String id, Block entry) {

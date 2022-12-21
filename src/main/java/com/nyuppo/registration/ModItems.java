@@ -8,6 +8,7 @@ import com.nyuppo.item.PincerItem;
 import com.nyuppo.item.RaftItem;
 import com.nyuppo.item.VerticallyAttachableBlockItem;
 import com.nyuppo.util.ModBoatType;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.block.Block;
@@ -310,6 +311,11 @@ public class ModItems {
         registerFlower("yucca", ModBlocks.YUCCA);
         registerFlower("crillea", ModBlocks.CRILLEA);
         registerFlower("eko", ModBlocks.EKO);
+
+        Registry.register(Registry.ITEM, ModBlocks.IRON_CHIME_ID, new BlockItem(ModBlocks.IRON_CHIME, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, ModBlocks.BAMBOO_CHIME_ID, new BlockItem(ModBlocks.BAMBOO_CHIME, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, ModBlocks.COPPER_CHIME_ID, new BlockItem(ModBlocks.COPPER_CHIME, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, ModBlocks.AMETHYST_CHIME_ID, new BlockItem(ModBlocks.AMETHYST_CHIME, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 
         BoatItems.registerBoats();
     }
