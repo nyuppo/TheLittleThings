@@ -4,17 +4,17 @@
   "version": "${version}",
 
   "name": "The Little Things",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "It's the little things that matter.",
   "authors": [
     "nyuppo"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/nyuppo/TheLittleThings"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/thelittlethings/icon.png",
 
   "environment": "*",
   "entrypoints": {
