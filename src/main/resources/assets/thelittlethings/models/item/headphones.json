@@ -1,0 +1,6 @@
+{
+  "parent": "thelittlethings:item/headphones_generic",
+  "textures": {
+    "layer0": "thelittlethings:hat/headphones"
+  }
+}

@@ -89,6 +89,9 @@ public class HatItems {
     public static final Item CARDBOARD_BOX_TINY;
     public static final Item CARDBOARD_BOX_CREEPER;
 
+    public static final Item HEADPHONES;
+    public static final Item KITTY_HEADPHONES;
+
     public static void registerHats() {
 
     }
@@ -183,5 +186,8 @@ public class HatItems {
         CARDBOARD_BOX_TONGUE = register("cardboard_box_tongue", Formatting.GRAY);
         CARDBOARD_BOX_TINY = register("cardboard_box_tiny", Formatting.GRAY);
         CARDBOARD_BOX_CREEPER = register("cardboard_box_creeper", Formatting.GRAY);
+
+        HEADPHONES = register("headphones");
+        KITTY_HEADPHONES = register("kitty_headphones");
     }
 }
