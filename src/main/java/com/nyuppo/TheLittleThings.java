@@ -112,8 +112,11 @@ public class TheLittleThings implements ModInitializer {
             double e = buf.readDouble();
             double f = buf.readDouble();
 
-            Entity entity = server.getOverworld().getEntity(uuid);
-            entity.setVelocity(new Vec3d(d, e + 2.0D, f).multiply(0.15D));
+            //Entity entity = server.getOverworld().getEntity(uuid);
+            ServerPlayerEntity entity = server.getPlayerManager().getPlayer(uuid);
+            if (entity != null) {
+                entity.setVelocity(new Vec3d(d, e + 2.0D, f).multiply(0.15D));
+            }
         }));
 
         UseBlockCallback.EVENT.register(this::onUseBlock);

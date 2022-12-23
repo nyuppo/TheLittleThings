@@ -27,7 +27,6 @@
     "EntityAccessor",
     "ArmorStandEntityAccessor",
     "ArmorStandEntityMixin",
-    "CowMilkMixin",
     "CreeperEntityMixin",
     "ClearItemFrameMixin",
     "EggEntityMixin",

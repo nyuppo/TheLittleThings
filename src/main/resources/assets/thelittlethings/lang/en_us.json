@@ -51,6 +51,7 @@
   "block.thelittlethings.bamboo_trapdoor": "Bamboo Trapdoor",
   "item.thelittlethings.bamboo_raft": "Bamboo Raft",
   "item.thelittlethings.bamboo_chest_raft": "Bamboo Raft with Chest",
+  "entity.thelittlethings.chest_raft": "Raft with Chest",
 
   "block.thelittlethings.sakura_log": "Sakura Log",
   "block.thelittlethings.stripped_sakura_log": "Stripped Sakura Log",
