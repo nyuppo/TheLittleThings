@@ -96,6 +96,10 @@ public class WildFlowerBlock extends PlantBlock {
                 world.syncWorldEvent(WorldEvents.BONE_MEAL_USED, pos, 0);
             }
 
+            if (!player.isCreative()) {
+                player.getStackInHand(hand).decrement(1);
+            }
+
             return ActionResult.success(world.isClient);
         }
 
@@ -267,7 +271,7 @@ public class WildFlowerBlock extends PlantBlock {
 
         if (colour2 != null) {
             for (Pair<WildFlowerColour, WildFlowerColour> pair : RARE_FLOWER_COLOUR_MAP.keySet()) {
-                if ((pair.getLeft() == colour1 && pair.getRight() == colour2) || (pair.getLeft() == colour2 && pair.getRight() == colour1) && random.nextFloat() < 0.2D) {
+                if (((pair.getLeft() == colour1 && pair.getRight() == colour2) || (pair.getLeft() == colour2 && pair.getRight() == colour1)) && random.nextFloat() < 0.2D) {
                     return RARE_FLOWER_COLOUR_MAP.get(pair);
                 }
             }
