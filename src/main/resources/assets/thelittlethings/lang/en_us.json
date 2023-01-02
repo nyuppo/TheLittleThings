@@ -261,6 +261,8 @@
   "block.thelittlethings.wild_weeds": "Wild Weeds",
   "block.wild_flower.germinating": "Germinating",
   "block.wild_flower.blooming": "Blooming",
+  "block.wild_flower.spreading": "Spreading",
+  "block.wild_flower.default": "Neutral",
   "subtitles.wild_flower.germinate": "Wild flower germinates",
   "subtitles.wild_flower.bloom": "Wild flower blooms",
 
@@ -374,6 +376,8 @@
   "item.thelittlethings.cardboard_box_creeper.tooltip": "Creeper",
   "item.thelittlethings.headphones": "Headphones",
   "item.thelittlethings.kitty_headphones": "Kitty Headphones",
+  "item.thelittlethings.gardening_hat": "Garden Hat",
+  "item.thelittlethings.gardening_hat.tooltip": "Handles wild flowers with extra care",
 
   "item.thelittlethings.carp": "Raw Carp",
   "item.thelittlethings.cooked_carp": "Cooked Carp",

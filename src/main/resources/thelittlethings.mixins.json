@@ -54,7 +54,8 @@
     "BipedFeatureMixin",
     "HeadFeatureFixMixin",
     "CamelJumpMixin",
-    "LeavesRenderLayerMixin"
+    "LeavesRenderLayerMixin",
+    "GardeningHatOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1

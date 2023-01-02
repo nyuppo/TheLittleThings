@@ -1,6 +1,7 @@
 package com.nyuppo.registration;
 
 import com.nyuppo.TheLittleThings;
+import com.nyuppo.item.GardeningHat;
 import com.nyuppo.item.HatItem;
 import com.nyuppo.item.HatLoreItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -92,6 +93,8 @@ public class HatItems {
     public static final Item HEADPHONES;
     public static final Item KITTY_HEADPHONES;
 
+    public static final Item GARDENING_HAT;
+
     public static void registerHats() {
 
     }
@@ -110,6 +113,10 @@ public class HatItems {
 
     private static Item register(String id, Rarity rarity, Formatting formatting) {
         return Registry.register(Registry.ITEM, TheLittleThings.ID(id), new HatLoreItem(new Item.Settings().maxCount(1).group(ModItemGroups.HAT_GROUP).rarity(rarity), Text.translatable("item.thelittlethings." + id + ".tooltip").formatted(formatting)));
+    }
+
+    private static Item registerGardeningHat(String id) {
+        return Registry.register(Registry.ITEM, TheLittleThings.ID(id), new GardeningHat(new Item.Settings().maxCount(1).group(ModItemGroups.HAT_GROUP).rarity(Rarity.UNCOMMON), Text.translatable("item.thelittlethings." + id + ".tooltip").formatted(Formatting.GRAY)));
     }
 
     static {
@@ -189,5 +196,7 @@ public class HatItems {
 
         HEADPHONES = register("headphones");
         KITTY_HEADPHONES = register("kitty_headphones");
+
+        GARDENING_HAT = registerGardeningHat("gardening_hat");
     }
 }

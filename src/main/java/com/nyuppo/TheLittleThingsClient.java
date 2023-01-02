@@ -104,6 +104,8 @@ public class TheLittleThingsClient implements ClientModInitializer {
 
         BlockEntityRendererRegistry.register(ModBlockEntityType.CHIME_BLOCK_ENTITY, WindchimeBlockEntityRenderer::new);
 
+
+
         ClientPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getHangingSignScreenPacketId(), (client, handler, buf, responseSender) -> {
             BlockPos pos = buf.readBlockPos();
             BlockEntity blockEntity = client.world.getBlockEntity(pos);
