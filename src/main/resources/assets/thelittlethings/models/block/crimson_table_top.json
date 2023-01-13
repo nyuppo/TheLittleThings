@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/table_top",
+  "textures": {
+    "side": "thelittlethings:block/crimson_table_side",
+    "top": "thelittlethings:block/crimson_table_top"
+  }
+}

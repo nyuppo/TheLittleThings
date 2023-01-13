@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "thelittlethings:oak_table",
+    "thelittlethings:spruce_table",
+    "thelittlethings:birch_table",
+    "thelittlethings:jungle_table",
+    "thelittlethings:dark_oak_table",
+    "thelittlethings:acacia_table",
+    "thelittlethings:mangrove_table",
+    "thelittlethings:crimson_table",
+    "thelittlethings:warped_table",
+    "thelittlethings:bamboo_table",
+    "thelittlethings:sakura_table",
+    "thelittlethings:azalea_table",
+    "thelittlethings:willow_table",
+    "thelittlethings:baobab_table"
+  ]
+}

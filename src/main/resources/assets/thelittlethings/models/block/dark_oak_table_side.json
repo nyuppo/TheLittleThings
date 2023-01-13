@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/table_leg",
+  "textures": {
+    "side": "thelittlethings:block/dark_oak_table_side",
+    "top": "thelittlethings:block/dark_oak_table_top"
+  }
+}

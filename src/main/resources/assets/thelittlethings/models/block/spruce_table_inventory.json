@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/table_inventory",
+  "textures": {
+    "side": "thelittlethings:block/spruce_table_side",
+    "top": "thelittlethings:block/spruce_table_top"
+  }
+}

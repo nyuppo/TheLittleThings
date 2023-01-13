@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "table",
+  "key": {
+    "S": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "L": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SS",
+    "LL"
+  ],
+  "result": {
+    "item": "thelittlethings:mangrove_table"
+  }
+}

@@ -165,6 +165,22 @@ public class ModBlocks {
     public static final Block WILLOW_TRIMMED_PLANKS = new PillarBlock(AbstractBlock.Settings.copy(WILLOW_PLANKS));
     public static final Block BAOBAB_TRIMMED_PLANKS = new PillarBlock(AbstractBlock.Settings.copy(BAOBAB_PLANKS));
 
+    // Tables
+    public static final Block OAK_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block SPRUCE_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS));
+    public static final Block BIRCH_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS));
+    public static final Block JUNGLE_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS));
+    public static final Block ACACIA_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS));
+    public static final Block DARK_OAK_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS));
+    public static final Block MANGROVE_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS));
+    public static final Block CRIMSON_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS));
+    public static final Block WARPED_TABLE = new TableBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS));
+    public static final Block BAMBOO_TABLE = new TableBlock(AbstractBlock.Settings.copy(BAMBOO_PLANKS));
+    public static final Block SAKURA_TABLE = new TableBlock(AbstractBlock.Settings.copy(SAKURA_PLANKS));
+    public static final Block AZALEA_TABLE = new TableBlock(AbstractBlock.Settings.copy(AZALEA_PLANKS));
+    public static final Block WILLOW_TABLE = new TableBlock(AbstractBlock.Settings.copy(WILLOW_PLANKS));
+    public static final Block BAOBAB_TABLE = new TableBlock(AbstractBlock.Settings.copy(BAOBAB_PLANKS));
+
     // Hedges
     public static final Block OAK_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
     public static final Block SPRUCE_HEDGE = new HedgeBlock(AbstractBlock.Settings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
@@ -587,6 +603,34 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(WILLOW_TRIMMED_PLANKS, 5, 20);
         Registry.register(Registry.BLOCK, TheLittleThings.ID("baobab_trimmed_planks"), BAOBAB_TRIMMED_PLANKS);
         FlammableBlockRegistry.getDefaultInstance().add(BAOBAB_TRIMMED_PLANKS, 5, 20);
+
+        // Tables
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("oak_table"), OAK_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(OAK_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("spruce_table"), SPRUCE_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(SPRUCE_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("birch_table"), BIRCH_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(BIRCH_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("jungle_table"), JUNGLE_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(JUNGLE_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("dark_oak_table"), DARK_OAK_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(DARK_OAK_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("acacia_table"), ACACIA_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(ACACIA_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("mangrove_table"), MANGROVE_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(MANGROVE_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("crimson_table"), CRIMSON_TABLE);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("warped_table"), WARPED_TABLE);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("bamboo_table"), BAMBOO_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(BAMBOO_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("sakura_table"), SAKURA_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(SAKURA_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("azalea_table"), AZALEA_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(AZALEA_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("willow_table"), WILLOW_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(WILLOW_TABLE, 5, 20);
+        Registry.register(Registry.BLOCK, TheLittleThings.ID("baobab_table"), BAOBAB_TABLE);
+        FlammableBlockRegistry.getDefaultInstance().add(BAOBAB_TABLE, 5, 20);
 
         register("oak_hedge", OAK_HEDGE);
         register("birch_hedge", BIRCH_HEDGE);

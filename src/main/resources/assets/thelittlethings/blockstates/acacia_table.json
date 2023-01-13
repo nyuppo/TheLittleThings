@@ -1,0 +1,50 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "thelittlethings:block/acacia_table_top",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "leg_0": "true"
+      },
+      "apply": {
+        "model": "thelittlethings:block/acacia_table_side",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "leg_1": "true"
+      },
+      "apply": {
+        "model": "thelittlethings:block/acacia_table_side",
+        "uvlock": true,
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "leg_2": "true"
+      },
+      "apply": {
+        "model": "thelittlethings:block/acacia_table_side",
+        "uvlock": true,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "leg_3": "true"
+      },
+      "apply": {
+        "model": "thelittlethings:block/acacia_table_side",
+        "uvlock": true,
+        "y": 180
+      }
+    }
+  ]
+}

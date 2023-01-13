@@ -203,6 +203,21 @@ public class ModItems {
         Registry.register(Registry.ITEM, TheLittleThings.ID("willow_trimmed_planks"), new BlockItem(ModBlocks.WILLOW_TRIMMED_PLANKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, TheLittleThings.ID("baobab_trimmed_planks"), new BlockItem(ModBlocks.BAOBAB_TRIMMED_PLANKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
+        register("oak_table", ModBlocks.OAK_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("spruce_table", ModBlocks.SPRUCE_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("birch_table", ModBlocks.BIRCH_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("jungle_table", ModBlocks.JUNGLE_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("dark_oak_table", ModBlocks.DARK_OAK_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("acacia_table", ModBlocks.ACACIA_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("mangrove_table", ModBlocks.MANGROVE_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("crimson_table", ModBlocks.CRIMSON_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("warped_table", ModBlocks.WARPED_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("bamboo_table", ModBlocks.BAMBOO_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("sakura_table", ModBlocks.SAKURA_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("azalea_table", ModBlocks.AZALEA_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("willow_table", ModBlocks.WILLOW_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+        register("baobab_table", ModBlocks.BAOBAB_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS));
+
         register("oak_log_fence", ModBlocks.OAK_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));
         register("oak_log_fence_gate", ModBlocks.OAK_LOG_FENCE_GATE, new Item.Settings().group(ItemGroup.DECORATIONS));
         register("birch_log_fence", ModBlocks.BIRCH_LOG_FENCE, new Item.Settings().group(ItemGroup.DECORATIONS));

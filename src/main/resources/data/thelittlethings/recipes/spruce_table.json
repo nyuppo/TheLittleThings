@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "table",
+  "key": {
+    "S": {
+      "item": "minecraft:spruce_slab"
+    },
+    "L": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SS",
+    "LL"
+  ],
+  "result": {
+    "item": "thelittlethings:spruce_table"
+  }
+}

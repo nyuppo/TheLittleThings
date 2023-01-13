@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/table_top",
+  "textures": {
+    "side": "thelittlethings:block/jungle_table_side",
+    "top": "thelittlethings:block/jungle_table_top"
+  }
+}

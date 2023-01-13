@@ -1,0 +1,7 @@
+{
+  "parent": "thelittlethings:block/table_inventory",
+  "textures": {
+    "side": "thelittlethings:block/acacia_table_side",
+    "top": "thelittlethings:block/acacia_table_top"
+  }
+}
