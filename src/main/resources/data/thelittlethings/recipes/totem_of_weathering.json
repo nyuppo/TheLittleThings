@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "C",
+    "W",
+    "C"
+  ],
+  "result": {
+    "item": "thelittlethings:totem_of_weathering"
+  }
+}

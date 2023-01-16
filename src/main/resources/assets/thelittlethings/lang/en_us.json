@@ -442,5 +442,7 @@
   "block.thelittlethings.bamboo_chime": "Bamboo Wind Chime",
   "block.thelittlethings.copper_chime": "Copper Wind Chime",
   "block.thelittlethings.amethyst_chime": "Amethyst Wind Chime",
-  "subtitles.block.thelittlethings.chime": "Wind Chime chimes"
+  "subtitles.block.thelittlethings.chime": "Wind Chime chimes",
+
+  "item.thelittlethings.totem_of_weathering": "Totem of Weather"
 }

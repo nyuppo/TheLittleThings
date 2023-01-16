@@ -38,6 +38,8 @@ import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.SignType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -134,6 +136,15 @@ public class TheLittleThingsClient implements ClientModInitializer {
             if (client.player != null) {
                 client.player.setVelocity(new Vec3d(d, e + 2.0D, f).multiply(0.15D));
             }
+        });
+
+        ClientPlayNetworking.registerGlobalReceiver(TheLittleThingsNetworkingConstants.getUseTotemOfWeatheringPacketId(), (client, handler, buf, responseSender) -> {
+            ItemStack stack = buf.readItemStack();
+
+            client.particleManager.addEmitter(client.player, ParticleTypes.TOTEM_OF_UNDYING, 30);
+
+            // this currently doesn't work, as it only shows the vanilla totem
+            client.gameRenderer.showFloatingItem(stack);
         });
     }
 }

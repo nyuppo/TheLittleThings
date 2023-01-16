@@ -3,10 +3,7 @@ package com.nyuppo.registration;
 import com.nyuppo.TheLittleThings;
 import com.nyuppo.entity.ModEntityTypes;
 import com.nyuppo.entity.vehicle.RaftEntity;
-import com.nyuppo.item.HangingSignItem;
-import com.nyuppo.item.PincerItem;
-import com.nyuppo.item.RaftItem;
-import com.nyuppo.item.VerticallyAttachableBlockItem;
+import com.nyuppo.item.*;
 import com.nyuppo.util.ModBoatType;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -75,6 +72,8 @@ public class ModItems {
     public static final Item TREVALLY;
     public static final Item BLUE_BETTA;
     public static final Item RED_BETTA;
+
+    public static final Item TOTEM_OF_WEATHERING;
 
     public static void registerItems() {
         // Bamboo Wood
@@ -443,5 +442,7 @@ public class ModItems {
         TREVALLY = registerFish("trevally", 3, 0.3f);
         BLUE_BETTA = registerFish("blue_betta", 2, 0.1f);
         RED_BETTA = registerFish("red_betta", 2, 0.1f);
+
+        TOTEM_OF_WEATHERING = register("totem_of_weathering", new TotemOfWeathering(new Item.Settings().maxCount(1).group(ItemGroup.MISC).rarity(Rarity.UNCOMMON)));
     }
 }
